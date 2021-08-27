@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @DivyanshuBatta
+- 👋 Hi, I’m @Divyanshu Batta
 - 👀 I’m interested in Web Development
 - 🌱 I’m currently learning Javascript
 - 💞️ I’m looking to collaborate on Github
