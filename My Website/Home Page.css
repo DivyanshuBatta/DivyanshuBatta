@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+    font-family: 'Proza Libre', sans-serif;
+}
+::selection {
+    background: transparent;
+}
+body{
+    /* max-width: 1440px;
+    max-height: 1024px; */
+    max-width: 100vw;
+    max-height: 100vh;
+}
+    /*background-image:url("https://blog.stucred.com/wp-content/uploads/2020/07/Study-area.jpg");
+    background-size: 100vw 100vh;
+.container{
+    width: 100vw;
+    height: 150px;
+    background: black;
+}*/
+.menu {
+    display:none;
+}
+.home {
+    background-image:url("https://blog.stucred.com/wp-content/uploads/2020/07/Study-area.jpg");
+    background-size: 110vw 120vh;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: -50px;
+    left: -40px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+.contactus{
+    width: 200px;
+    height: 50px;
+    background-color:black;
+    border-radius: 30px;
+    position: relative;
+    top:75px;
+    left: 470px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.contactus h3 {
+    position: relative;
+    top: 7px;
+    left: 13px;
+    font-size: 27px;
+}
+.aboutus{
+    width: 185px;
+    height: 50px;
+    background-color:black;
+    border-radius: 30px;
+    position: relative;
+    top: 0px;
+    left: 700px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus h3 {
+    position: relative;
+    top: 10px;
+    left: 17px;
+    font-size: 28px;
+}
+.start{
+    width: 200px;
+    height: 65px;
+    background-color:black;
+    border-radius: 30px;
+    position: relative;
+    bottom: 450px;
+    left: 35px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.start h2 {
+    position: relative;
+    top: 16px;
+    left: 1px;
+    font-size: 28px;
+}
+.heading {
+    position: relative;
+    left: 300px;
+    top: -110px;
+    font-size: 115px;
+    font-weight: bold;
+    width: max-content;
+}
+.heading::before,
+.heading::after {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.heading::before {
+  background: #f4f3ff;
+  animation: typewriter 4s steps(5) forwards;
+  position: absolute;
+  transform: translateY(-38px);
+}
+.heading::after {
+    width: .125em;
+    background-color: black;
+    animation: typewriter 4s steps(5) forwards;
+    z-index: 1111;
+}
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+.feedback{
+    width: 165px;
+    height: 50px;
+    background-color:black;
+    border-radius: 30px;
+    position: relative;
+    bottom:82px;
+    left: 270px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.feedback h3{
+    position: relative;
+    top: 7px;
+    left: 7px;
+    font-size: 28px;
+}
+.sections{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 200px;
+}
+.feed {
+    width:550px;
+    height:400px;
+    border: 10px solid rgb(169, 123, 221);
+    position: relative;
+    left: 100px;
+    top: -100px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px rgb(169, 123, 221);
+    background-color: white;
+    border-radius: 30px;
+}
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: relative;
+    top: -60px;
+}
+.feed .heading1 {
+    font-size: 35px;
+    position: relative;
+    top: -30px;
+}
+.feed h2 {
+    position: relative;
+    top: -80px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    display: none;
+}
+/* .footer {
+    width:100vw;
+    height: 100px;
+    background-color: rgb(12, 11, 11);
+    position:relative;
+    top:54px;
+    color:white;
+}
+.footer h3 {
+    position: relative;
+    top: 50%;
+    left: 100%;
+    transform: translate(-60%,-50%);
+} */
+.message{
+     width: 100px;
+    height:100px;
+    border-radius: 50px; 
+    background-color: #fff;
+    position: relative;
+    top: 330px;
+    left: 750px;
+    /* color: white;
+    font-weight: bold;
+    font-size: 16px; */
+}
+@media (min-width:320px) and (max-width:480px) {
+     /*html {
+        zoom: 2;
+    }*/
+    .about-us {
+        padding-left: 5px;
+    }
+    .feed-back {
+        display: none;
+    }
+    li {
+        display: inline-block;
+        padding-left: 0px;
+        margin: 7px;
+        font-size: 16.5px;
+        text-align: center;
+        position: relative;
+        top:-20px;
+        left: 20px;
+        font-weight: bold;
+        z-index: 100;
+        text-decoration: none;
+    }
+    .menu {
+        display:block;
+        width: 25px;
+        height: 25px;
+        border-radius: 12.5px;
+        position: relative;
+        top: -250px;
+        left: 38px;
+        overflow: hidden;
+    }
+    .navstart {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: -200px;
+        left: 14px;
+        border-radius: 35px;
+        background-color: black;
+        padding: -10px;
+        overflow: hidden;
+    }
+    .navstart:hover{
+        width: 100vw;
+        border-radius: none;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        height: 70px;
+        transition: width .8s;
+    }
+    a {
+        color:#fff;
+        text-decoration:none;
+    }
+    .message {
+        width:70px;
+        height: 70px;
+        border-radius: 35px;
+        position:relative;
+         top: -20vh;
+        left: 120px; 
+        overflow: visible;
+    }
+     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+         /* zoom: 140%;  */
+    }
+    .home {
+        background-size: 100% 100%;
+        position: relative;
+        top:-70px;
+        left: -10px;
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        margin: auto;
+        overflow:visible;
+    }
+    .start {
+        /* width: 250px; */
+        width: 80%;
+        height: 70px;
+        position: relative;
+        top: 51vh;
+        left: 15px;
+    }
+    .start h2 {
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        left: -1px;
+    }
+    .heading {
+        font-size: 80px;
+        position: relative;
+        left: 50px;
+        top: 100px;
+    }
+    .feedback {
+        display: none;
+    }
+    .contactus {
+        display: none;
+    }
+    .aboutus {
+        display: none;
+    }
+    /* .feedback {
+        display: none;
+    }
+    .contactus {
+        width: 160px;
+    height: 60px;
+        position: relative;
+        top: 111px;
+        left: 20px;
+    }
+    .contactus h3 {
+        font-size: 21px;
+        position: relative;
+        top: 15px;
+    }
+    .aboutus {
+        width: 150px;
+    height: 60px;
+        position: relative;
+        top: 32px;
+        left: 185px;
+    }
+    .aboutus h3 {
+        font-size: 21px;
+        position: relative;
+        top: 15px;
+    } */
+}
+/* @media (min-width:411px) and (max-width:480px) {
+    body{
+        /* max-width: 1440px;
+        max-height: 1024px; */
+        /* max-width: 100vw;
+        overflow: visible;
+        /* zoom: 140%; */
+    /* }  */
+    /* .home { */
+            /* background-size: 100vw 100vh;
+            position: relative;
+            top: -20px;
+            left: 10px;
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            margin: auto;
+            overflow: visible;
+    }
+    .heading {
+        position: relative;
+        left: 80px;
+        top: 30px;
+        font-size: 80px;
+    }
+    .start {
+        width: 300px;
+        height: 70px;
+        position: relative;
+        top: 0px;
+        left: 50px;
+        overflow: visible;
+    }
+    .start h2 {
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        left: -1px;
+    }
+    .contactus {
+        width: 260px;
+        height: 85px;
+        position: relative;
+        left: 20px;
+        top: 10px;
+    }
+    .contactus h3 {
+        font-size: 32px;
+    }
+    .aboutus {
+        width: 220px;
+        height: 65px;
+        position: relative;
+        left: 270px;
+        top: -85px;
+    }
+    .aboutus h3 {
+        font-size: 33px;
+        position: relative;
+        left: 20px;
+    }
+    .navstart {
+        position: relative;
+        top: -250px;
+        left: -10px;
+    }
+    li {
+        font-size: 22px;
+        position: relative;
+        top: -30px;
+    }
+    .menu {
+        position: relative;
+        left: 10px;
+        top: -320px;
+    }
+    .message {
+        position: relative;
+        top: -200px;
+    }
+} */
+@media (min-width:350px) and (max-width:480px) {
+    .message {
+        position: relative;
+        left: -10px;
+        top: -50px;
+    }
+    .start h2 {
+        position: relative;
+        top: -25px;
+        left: 30px;
+    }
+    .heading {
+        position: relative;
+        left: 0px;
+        text-align: center;
+    }    
+}
+@media (min-width:351px) and (max-width:359px) {
+    .message {
+        position: relative;
+        left: -30px;
+    }
+}
+@media (min-width:481px) and (max-width:768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .home {
+        background-size: 100vw 100vh;
+        position: relative;
+        top: 150px;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+    .heading {
+        font-size: 70px;
+        position: relative;
+        left: 170px;
+        top: -20px;
+    }
+    .start  {
+        width: 140px;
+        height: 50px;
+        position: relative;
+        top:-250px;
+        left: 40px;
+    }
+    .start h2 {
+        font-size: 19.2px;
+    }
+    .feedback {
+        display: none;
+    } 
+    .contactus {
+        position: relative;
+        top: 40px;
+        left: 210px;
+    }
+    .aboutus {
+        position: relative;
+        top: -15px;
+        left: 350px;
+    }
+}
+/* Make website responsive: @media screen and (min-width:591px) and (max-width:768px) {} */

@@ -1,0 +1,55 @@
+body {
+    display: flex;
+}
+.Google {
+    width: 220px;
+    height: 75px;
+    position: relative;
+    top: 125px;
+    left: 320px;
+}
+.query {
+    width: 200vw;
+    height: 30px;
+    position: relative;
+    top: 225px;
+    left: -20px;
+    border: none;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 44px;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Search {
+    width: 550px;
+    height: 30px;
+    position: relative;
+    top: 270px;
+    right: 310px;
+    border: none;
+}
+.img {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.gmail {
+    color: black;
+    text-decoration: none;
+    padding-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding-top: 15px;
+}
+.img:hover {
+    text-decoration: underline;
+}
+.gmail:hover {
+    text-decoration: underline;
+}

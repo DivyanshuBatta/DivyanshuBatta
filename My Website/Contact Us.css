@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+* {
+    font-family: 'Proza Libre', sans-serif;
+}
+body{
+    max-width: 1440px;
+    max-height: 1024px;
+}
+input {
+    display: block;
+    margin-bottom:10px;
+    position:relative;
+    left: 480px;
+    top: -420px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid /*rgba(189, 189, 189, 0.849)*/ rgb(82, 82, 83);
+    z-index: 1;
+    padding-left:10px;
+    padding-right: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.message {
+    height: 80px;
+}
+.circle {
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    /*background-color:rgb(169, 123, 221)#3dc8e9;*/
+    /*background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,230,241,1) 0%, rgba(145,192,241,1) 45.5% );*/
+    background-color: #9a86ff;
+    position: relative;
+    top: -860px;
+    left: 380px;
+    z-index: 0;
+}
+.contact {
+    position: relative;
+    top: -420px;
+    left: 480px;
+    z-index: 1;
+    font-size: 35px;
+}
+.heading{
+    position: relative;
+    top: 50px;
+    z-index: 1;
+}
+img {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: -10px;
+    z-index: 0;
+}
+.back {
+    width: 80px;
+    height: 15px;
+    background-color: #9a86ff;
+    color:white;
+    font-size: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 22px;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+.back h4 {
+    position: relative;
+    top: -25px;
+}
+input[type='submit'] {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(40, 231, 40);
+    position: relative;
+    left: 545px;
+    font-size: 16px;
+}

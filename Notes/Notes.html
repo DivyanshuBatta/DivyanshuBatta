@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="Notes.css" />
+    <link rel="stylesheet" href="NotesResponsive.css">
+  </head>
+  <body>
+      
+    <div class="navbar">
+      <h1>NOTES</h1>
+      <input
+        type="text"
+        name=""
+        id="text-search"
+        placeholder="Search Notes"
+        aria-label="Search Notes"
+      />
+      <!-- <input type="submit" value="Search" aria-label="Submit" id="submit" /> -->
+    </div>
+    <div class="main" id="main">
+      <h1 id="h1">Welcome to NOTES</h1>
+      <div id="note_Entry">
+        <h2>Add a Note</h2>
+        <textarea name="" id="input" rows="30" autofocus="true"></textarea>
+        <button id="submit">Add Note</button>
+      </div>
+      <h2 id="your-note">Your Notes</h2>
+      <div id="note-container"> 
+     <!--<div id="notes" class="note1">
+        <input type="checkbox" name="" id="checkbox" aria-label="checkbox"/>
+        <h2 id="note_heading"></h2>
+        <p id="note_para"></p>
+        <button>Delete Note</button>
+      </div> -->
+    </div>
+    <div id="add" onclick="showAddNote()"><h2>+</h2></div>
+    </div>
+  </body>
+  <script src="Notes.js"></script>
+</html>

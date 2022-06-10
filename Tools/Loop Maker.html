@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Maker</title>
+</head>
+<body>
+    <style>
+        /* #p {
+            width: 70%;
+            height: 100%;
+            background-color: red;
+        } */
+    </style>
+    <input type="number" placeholder="Enter first No." id="first" value="">
+    <input type="number" placeholder="Enter second No." id="second" value="">
+    <input type="submit" value="Submit" onclick="loop()">
+    Answer:<p id="p"></p>
+    <script>
+        function loop() { 
+        let firstNo = document.getElementById('first').value;
+        let secondNo = document.getElementById('second').value;
+     for (firstNo; firstNo < secondNo; firstNo++) {
+    document.getElementById('p').innerHTML = firstNo;
+    // console.log(firstNo)
+        // .innerHTML = firstNo++;
+    }
+}
+    </script>
+</body>
+</html>

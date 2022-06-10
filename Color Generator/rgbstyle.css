@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Rubik";
+}
+main {
+    height: calc(100vh - 7.5vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+nav {
+    width: 100vw;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+}
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div h1 {
+    font-size: 30px;
+    position: absolute;
+    left: 10vw;
+}
+nav div ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: relative; */
+    /* top: -10%; */
+}
+nav div ul li#first {
+    position: absolute;
+    right: 25vw;
+    width: 20vw;
+    height: 5vh;
+    margin-right: 5vw;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav div ul li#second {
+    position: absolute;
+    right: 25vw;
+    width: 20vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav div ul li a {
+    color: white;
+    text-decoration: none;
+}
+main button {
+    width: 20vw;
+    height: 10vh;
+    justify-self: center;
+    margin-top: 3vw;
+    border: 1px solid black;
+    font-size: 20px;
+}
+main button:hover {
+    transform: scale3d(1.2,1.2,1) translate3d(0%, 0, 0) perspective(500px);
+    transition: all 0.1s;
+}

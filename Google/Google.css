@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    /* width: 100vw;
+    height: 100vh; */
+}
+.Google {
+    width: 220px;
+    height: 75px;
+    position: relative;
+    top: 125px;
+    left: 35%;
+}
+.query {
+    width: 200vw;
+    height: 30px;
+    position: relative;
+    top: 225px;
+    left: -20px; 
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 22px;
+    padding-left: 20px;
+    padding-right: 44px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-family: arial,sans-serif;
+}
+.query:hover {
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.Search {
+    width: 550px;
+    height: 30px;
+    position: relative;
+    top: 270px;
+   right: 35%;
+    border: none;
+}
+.img {
+    color: black;
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+.gmail {
+    color: black;
+    text-decoration: none;
+    padding-right: 15px;
+    font-family: arial,sans-serif;
+    font-size: 10px;
+    padding-top: 10px;
+}
+.img:hover {
+    text-decoration:underline;
+}
+.gmail:hover {
+    text-decoration:underline;
+}
+@media screen and (max-width:725px) {
+    body {
+        display: flex;
+        /* width: 100vw;
+        height: 100vh; */
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+.query {
+    width: 220px;
+    margin-right: -150px;
+    position: relative;
+    top: 210px;
+    left: -230px;
+    justify-self: center;
+    font-size: 19px;
+}
+.Google {
+    /* justify-self: center; */
+    width: 230px;
+    height: 80px;
+    margin-right: 295px;
+}
+.Search {
+    min-width: 200px;
+    position: relative;
+    left:-320px;
+    font-size: 18px;
+
+}
+.gmail {
+    /* margin-right:400px; */
+    position: absolute;
+    right: 100px;
+    font-size: 19px;
+}
+.img {
+    /* margin-right:400px; */
+    position: absolute;
+    right: 0px;
+    font-size: 19px;
+}
+.query:focus {
+    border: transparent;
+}
+}

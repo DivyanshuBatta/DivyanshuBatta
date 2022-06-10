@@ -1,0 +1,15 @@
+.wrapper .keys{
+  display: flex;
+  justify-content: center;
+  /* width: 100vw;
+  height: 40vh; */
+}
+.wrapper #row1,#row2,#row3 {
+  width: 100vw;
+  height: 40vh;
+}
+.wrapper .display textarea{
+  width:100%;
+  height:100%;
+  padding:10px 15px;
+}

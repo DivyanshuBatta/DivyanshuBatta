@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+* {
+    font-family: 'Proza Libre', sans-serif;
+}
+body{
+    max-width: 1440px;
+    max-height: 1024px;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+h2 {
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+}
+table tr td {
+    border:2px solid rgb(243, 243, 243);
+    width: 270px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background: #fefefe;
+    border-radius: 10px;
+}
+.d {
+    width:750px;
+    position:relative;
+    top:80px;
+    text-align: center;
+    font-size: 18px;
+    background: #fefefe;
+border:2px solid rgb(243, 243, 243);
+font-weight: bold;
+}
+table {
+    position: relative;
+    top: -50px;
+}

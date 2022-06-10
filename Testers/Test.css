@@ -1,0 +1,130 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  border:none;
+}
+body {
+  display:flex;
+  justify-content: center;
+  justify-items: center;
+  background: #ffffff;
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.calculator {
+  display:grid;
+  position:relative;
+  top:-30px;
+  background-color: #e7e7e7;
+  height: 480px;
+  border-radius: 30px;
+}
+.calculator .value
+{
+  grid-column: span 4;
+  height:100px;
+  text-align:right;
+  border:15px solid black;
+  outline: none;
+  font-size: 30px;
+  width:320px;
+  position:relative;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #bcd1d0;
+  border-radius: 15px;
+  position: relative;
+  top: 40px;
+  padding: 3px 3px;
+}
+.calculator span
+{
+  display:grid;
+  width:70px;
+  height:55px;
+  color:#ffffff;
+  background: #000000;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15px;
+  position: relative;
+  top: 30px;
+  left: -30px;
+  margin-top: -10px;
+}
+.calculator span:active
+{
+  background: #FFFFFF;
+  color:#111;
+}
+.calculator span.clear
+{
+  grid-column: span 2;
+  width:120px;
+  background:#999999;
+  color:#ffffff;
+  position: relative;
+  left: 10px;
+}
+.calculator span.plus 
+{
+/*grid-row:span 2;*/
+height:120px;
+background:#999999;
+color:#ffffff;
+position: relative;
+left: 245px;
+}
+.calculator span.equal
+{
+  background:#999999;
+  color:white;
+  border-radius: 100px;
+  position:relative;
+  top: 0px;
+  left: 40px;
+}
+.calculator span.num2 {
+  background-color: #999999;
+  font-size: 30px;
+  position: relative;
+  top: 29px;
+  left: 245px;
+}
+.calculator span.num1 {
+  margin-top: -20px;
+  margin-bottom: -10px;
+  position: relative;
+  left: -70px;
+  top: 50px;
+}
+.calculator span.num3 {
+  margin-top: -10px;
+  position: relative;
+  left: -70px;
+  top: 40px;
+}
+.calculator span.num4 {
+  margin-top: -20px;
+  position: relative;
+  left: -70px;
+  top: 40px;
+}
+.calculator span.percent {
+  background-color: #999999;
+  position: relative;
+  left: -20px;
+}
+.calculator span.numdivide {
+  background-color: #999999;
+  color: #FFFFFF;
+  width: 70px;
+  height: 55px;
+ position: relative;
+ left: 5px;
+
+}

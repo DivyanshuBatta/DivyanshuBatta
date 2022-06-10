@@ -1,0 +1,232 @@
+@media screen and (max-width:1257px) {
+    #home nav button {
+        width: 15vw;
+    }
+    #home nav h2 {
+        position: relative;
+        left: -8vw;
+    }
+}
+@media screen and (max-width:982px) {
+    #home .container .box h1 {
+        font-size: 1.8rem;
+    }
+    #home nav h2 {
+        position: relative;
+        left: -1vw;
+    }  
+    #home nav button {
+        width: 100vw;
+    height: 7vh;
+    position: absolute;
+    top: 13%;
+    justify-self: center;
+    /* z-index: -1; */
+}
+}
+@media screen and (max-width:810px) {
+    #home .container .box h2 {
+        font-size: 1.5rem;
+    }  
+    /* #home nav {
+        height: 30vh;
+    } */
+}
+@media screen and (max-width:770px) {
+    #home .container .box {
+        width: 35vw;
+    }
+    #home .container .box h1 {
+        font-size: 2rem;
+    }  
+    #home .container .box h2{
+        font-size: 1.5rem;
+    }
+    #section main h1 {
+        font-size: 4.8rem;
+    }
+    #home nav button {
+        position: absolute;
+         top: 10.5%; 
+        left: 33vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+        border-radius: 1.5rem;
+        width: 50vw;
+    }
+}
+@media screen and (max-width:726px) {
+    #home nav h2 {
+        font-size: 3rem;
+    }
+    .navbar h3 {
+        font-size: 3rem;
+        position: absolute;
+        right: 10%;
+    }
+    #login main h1 {
+        font-size: 5rem;
+    }
+    input[type='text'] {
+        width: 80vw;
+    }
+    #class main h1 {
+        font-size: 3.5rem;
+    }
+    #section main h1 {
+        font-size: 3.5rem;
+    }
+    #home nav button {
+        position: absolute;
+        top: 7.5%;
+        justify-self: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+        border-radius: 1.5rem;
+        width: 50vw;
+    }
+    main #button1,#button2,#button3,#button4 {
+        width: 40vw;
+    }
+    #syllabus main #button4 {
+        width: 40vw;
+    }
+}
+@media screen and (max-width:640px) {
+     .navbar h3 {
+        font-size: 2.8rem;
+    }
+    .navbar img {
+        display: none;
+    }
+    #home nav img {
+        display: none;
+    }
+    #syllabus main h1 {
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:591px) {
+    #home nav h2 {
+        position: relative;
+        left: -4%;
+        font-size: 2.7rem;
+    }
+    #home .container div#homework h1 {
+        font-size: 1.6rem;
+    }
+    #home h1 {
+        position: relative;
+        left: -3%;
+    }
+    #home h2 {
+        position: relative;
+        left: -4%;
+    }
+}
+@media screen and (max-width:487px) {
+    #home > h2 {
+        font-size: 2.5rem;
+    }
+    #home > h1,h2 {
+    position: relative;
+    left:-5%;
+    }
+}
+@media screen and (max-width:472px) {
+    .navbar h3 {
+        font-size: 2.6rem;
+        position: absolute;
+        right: 5%;
+    }
+    #login main h1 {
+        font-size: 3.6rem;
+    }
+     main #button1,#button2,#button3,#button4 {
+        width: 50vw;
+    }
+    #home nav h2 {
+        font-size: 2.5rem;
+    }
+    #home h1 {
+        font-size: 2rem;
+    }
+    #home nav button {
+        position: absolute;
+        top: 5.5%;
+        justify-self: center;
+    }
+}
+@media screen and (max-width:445px) {
+    #home > h1 {
+        font-size: 1.8rem;
+    }
+    #home > h2 {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:436px) {
+    #home .container .box {
+        width: 60vw;
+    }
+}
+@media screen and (max-width:424px) {
+    .navbar h3 {
+        font-size: 2.2rem;
+        position: absolute;
+        right: 5%;
+    }
+    main h1 {
+        font-size: 2rem;
+    }
+    main input[type='submit'] {
+        width: 50vw;
+    }
+    #home > h1 {
+        font-size: 1.65rem;
+        position: relative;
+        top: 2rem;
+    }
+    #home > h2 {
+        position: relative;
+        top: 1rem;
+    }
+    #home .nav .h2 {
+        font-size: 2.4rem;
+    }
+    #home nav button {
+        position: absolute;
+        top: 5%;
+        justify-self: center;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:400px) {
+    #home .nav .h2 {
+        font-size: 2rem;
+    }
+    #home > h1 {
+        margin-top: 2rem;
+        font-size: 1.35rem;
+    }
+}
+@media screen and (max-width:358px) {
+    #home > h1 {
+        margin-bottom: -0.1rem;
+        margin-top: 2rem;
+    }
+    .navbar h3 {
+        font-size: 2rem;
+        position: absolute;
+        right: 5%;
+    }
+    #login main h1 {
+        font-size: 3.3rem;
+    }
+    #home .nav h2.h2 {
+        font-size: 1.8rem;
+
+    }
+}

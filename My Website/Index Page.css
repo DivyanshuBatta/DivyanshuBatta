@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+* {
+    font-family: 'Proza Libre', sans-serif;
+}
+::selection {
+    background-color: #f4f4fe;
+}
+body {
+    /*background-color: rgb(214, 214, 214);*/
+/*background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}*/
+/*background: radial-gradient( circle farthest-corner at 14.2% 27.5%,  rgba(104,199,255,1) 0%, rgba(181,126,255,1) 90% );*/
+
+/*background: linear-gradient(to right, #e0eafc, #cfdef3);*/
+/*background-color: #f4f4fe/*#00ffea*/
+  background:linear-gradient(#ffafbd, #ffc3a0); 
+background-size: 100vw 250vh;
+background-repeat: no-repeat;
+    max-width: 1440px;
+    max-height: 1024px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 75px;
+    position: relative;
+    left: 45px;
+}
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    z-index: 0;
+}
+.box {
+    width:200px;
+    height: 340px;
+    font-size: 8.5px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+     position: relative;
+    top: -40px;
+    left: 15px; 
+    border-radius: 21px 21px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(243, 243, 243);
+    /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
+    /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
+    /*box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;*/   
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+/*background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+/*box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 16%);*/
+background-color: #fefefe;
+margin-bottom: 30px;
+}
+.box:hover {
+    position: relative;
+    top: -50px;
+    height: 360px;
+    font-size: 9.5px;
+    z-index: 1;
+    transition-property: all;
+    transition-duration:.3s;
+    transition-timing-function: ease-in;
+    font-weight: bolder;
+}
+.container {
+    display: grid;
+    grid-template-columns: 280px 280px; 
+    position: absolute;
+    left: 130px;
+}
+h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.h2 {
+    font-size: 10.8px;
+}
+.heading {
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    z-index: 0;
+}
+button {
+    width: 70px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    background-color: aquamarine;
+    border: none;
+    border-radius:12px;
+}
+a {
+    text-decoration: none;
+}
+#Queries .h2 {
+    font-size:11px;
+    position: relative;
+    top: -5px;
+}
+#Queries .query-btn {
+    position: relative;
+    top: -15px;
+}
+#Queries:hover .h2 {
+    font-size:12px;
+    z-index: 1;
+    transition-property: all;
+    transition-duration:0.5s;
+    transition-timing-function: ease-in;
+}
+.back {
+    width: 80px;
+    height: 15px;
+    /*background-color: #d3ecff;*/
+    background-color: #fefefe;
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 22px;
+    position: fixed;
+    top: 10px;
+    left: 640px;
+}
+.back h4 {
+    position: relative;
+    top: -25px;
+    font-weight: bold;
+}
+#Tests {
+    height: 300px;
+}
+#Datesheet {
+    height: 300px;
+}
+/*FOR MY PHONE*/
+/* @media screen and (max-width:576px) {
+    .container {
+        display: block;
+        width: 100%;
+    }
+    .box {
+        width: 250px;
+        height: 430px;
+        margin: auto auto 15px auto;
+        position: relative;
+        left:-30px;
+        font-size: 10.5px;
+    }
+    .heading {
+        font-size: 50px;
+    }
+    #Queries .h2 {
+        font-size:13.5px;
+        position: relative;
+        top: -5px;
+    }
+    .box:hover {
+        width: 270px;
+        height: 480px;
+        position: relative;
+        top: -40px;
+        font-size: 12.5px;
+        z-index: 1;
+        transition-property: all;
+        transition-duration:0.4s;
+        transition-timing-function: ease-in;
+    }
+    #Queries:hover .h2 {
+        font-size:16px;
+        z-index: 1;
+        transition-property: all;
+        transition-duration:0.5s;
+        transition-timing-function: ease-in;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .box:hover h1 {
+        font-size: 32px;
+    }
+    .box img {
+       position: relative;
+       left: 70px;
+    }
+    #Homework {
+        height: 400px;
+    }
+    #Classes {
+        height: 390px;
+    }
+    }
+    /*OPPO A5 WIDTH IS   285.732288px*/
+    /*OPPO A15s WIDTH IS 284.976384px*/
+    /*VIVO Y66 WIDTH IS  285.354336px*/
+    /*VIVO V9 WIDTH IS   283.577952px*/
+    /*REDMI K20 WIDTH IS 280.818912px*/
+    @media screen and (max-width:285.732288px) {
+      .container {
+            display: block;
+            width: 100%;
+        }
+        .box {
+            width: 210px;
+            height: 380px;
+            margin: auto auto 15px auto;
+            position: relative;
+            left:-30px;
+            font-size: 9.5px;
+        }
+        .heading {
+            font-size: 43px;
+        }
+        #Queries .h2 {
+            font-size:12.5px;
+            position: relative;
+            top: -5px;
+        }
+        .box:hover {
+            width: 220px;
+            height: 400px;
+            position: relative;
+            top: -40px;
+            font-size: 10px;
+            z-index: 1;
+            transition-property: all;
+            transition-duration:0.4s;
+            transition-timing-function: ease-in;
+        }
+        #Queries:hover .h2 {
+            font-size:13.3px;
+            z-index: 1;
+            transition-property: all;
+            transition-duration:0.5s;
+            transition-timing-function: ease-in;
+        }
+        #Homework {
+            height: 350px;
+        }
+        #Classes {
+            height: 390px;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    } 

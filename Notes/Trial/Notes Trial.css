@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+.navbar {
+    width: 100vw;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+}
+.navbar h1 {
+    font-size: 30px;
+    position: absolute;
+    left: 10vw;
+}
+.navbar #text-search {
+    position: absolute;
+    right: 25vw;
+    width: 20vw;
+    height: 5vh;
+    padding-left: 1vw;
+}
+.navbar #submit {
+    position: absolute;
+    right: 15vw;
+    width: 8.5vw;
+    height: 5vh;
+    margin-left: 2vw;
+    background-color: rgb(0, 89, 255);
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.main {
+    display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+margin-bottom: 2vw;
+}
+.main h1 {
+    font-size: 60px;
+    margin: 2vw;
+    text-align: center;
+}
+.main > h2 {
+    font-size: 30px;
+    margin-top: 16vh;
+    margin-left: -30vw;
+}
+.main #add {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(0, 89, 255);
+    border-radius: 50%;
+    position: fixed;
+    left: 92vw;
+    bottom: 1vw;
+    font-size: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.main #add h2 {
+    position:absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 500;
+}
+.main div#note-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.main .NotesClass {
+    width: 25vw;
+    height: 25vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: minmax(20vw,auto);
+    overflow-y: minmax(20vh,auto);
+    overflow: hidden;
+    /* padding: auto; */
+}
+.main .NotesClass h2 {
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    font-size: 30px;
+}
+.main .NotesClass p {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 20vw;
+    margin: auto;
+    /* height: fit-content; */
+    font-size: 20px;
+}
+.main .NotesClass button {
+    position: absolute;
+    bottom:10%;
+    width: 35%;
+    height: 20%;
+    border-radius: 5%;
+    background-color: rgb(0, 89, 255);
+    border: none;
+    color:white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.main #note_Entry {
+    width: 100vw;
+    height: 20vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -3vh;
+}
+.main #submit  {
+    width: 8.5vw;
+    padding-top: 2vh;
+    padding-bottom: 2.5vh;
+    background-color: rgb(0, 89, 255);
+    border: none;
+    border-radius: 5%;
+    margin-top: 1vw;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: 10vh;
+
+}
+.main #note_Entry h2 {
+    position: relative;
+    top: 10vh;
+}
+.main #note_Entry #input-heading{
+    width: 80vw;
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+    padding-bottom: 5vh;
+    font-size: 20px;
+    position: relative;
+    top: 10vh;
+}
+.main #note_Entry #input {
+    width: 80vw;
+    padding-left: 1vw;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    font-size: 20px;
+    position: relative;
+    top: 10vh;
+} 
+/*Made for Using in Javascript*/
+.NotesClassJs {
+    transform: scale3d(1.2,1.2,1) translate3d(0%, 0, 0) perspective(500px);
+    min-width: 25vw;
+    min-height: 25vh;
+    max-width: auto;
+    max-height: auto;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.NotesClassParaJS {
+    justify-self: center;
+    width: 20vw;
+    margin: auto;
+    /* height: fit-content; */
+    font-size: 20px;
+}
+.NotesClassHeadingJS {
+    margin: 5% 0 5% 0;
+    justify-self: center;
+    font-size: 30px;
+}
+.NotesClassButtonJS {
+    position: relative;
+    bottom:10%;
+    width: 35%;
+    height: 5vh;
+    border-radius: 5%;
+    background-color: rgb(0, 89, 255);
+    border: none;
+    color:white;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 3% 0 3% 0;
+}

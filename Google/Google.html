@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='eng'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google</title>
+</head>
+<body>
+  <link rel="stylesheet" href="Google.css">
+  <img class='Google' src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt='Google'>
+    <input class="query" type="text" placeholder="Ask Anything">
+    <button class="Search" onclick="search()">Google Search</button>
+    <a href="https://mail.google.com/mail/?tab=rm&authuser=0&ogbl" class="gmail">Gmail</a>
+    <a href="https://www.google.co.in/imghp?hl=en&tab=ri&authuser=0&ogbl" class="img">Images</a>
+    <script>
+      function search() {
+      let query = document.querySelector('.query');
+      let query2 = query.value;
+      return window.location = 'https://www.google.com/search?q=' + query2;
+      }
+    </script>
+</body>
+</html>

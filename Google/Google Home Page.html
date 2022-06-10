@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Google Home Page</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <link rel="stylesheet" href="Google Home Page.css">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" class="Google">
+        <input type="text" class="query" placeholder="Ask Anything">
+        <button class="search" onclick="search()">Google Search</button>
+        <a href="https://mail.google.com/mail/?tab=rm&authuser=0&ogbl" class="gmail">Gmail</a>
+        <a href="https://www.google.co.in/imghp?hl=en&tab=ri&authuser=0&ogbl" class="img">Images</a>
+        <script>
+            function search() {
+                let query = document.querySelector('.query').value;
+                return window.location = 'https://www.google.com/search?q=' + query;
+            }
+        </script>
+    </body>
+</html>

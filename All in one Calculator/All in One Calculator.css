@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+* {
+font-family: 'Nunito', sans-serif;    
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+}
+.calculator {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.animate {
+    animation: animate 2s ease-in;
+}
+@keyframes identifier {
+    from {
+        display:flex;
+    }
+    to {
+        display:none;
+    }
+}
+.dark-mode {
+    background:black;
+    color: white;
+}
+#next {
+    width: 150px;
+    height: 40px;
+    position: relative;
+    top: -30px;
+    background-color: orange;
+    font-size: 25px;
+    border: none;
+    font-weight: bold;
+}
+.dark {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:#3d3635;
+    position: absolute;
+    right: 20px;
+}
+.light {
+    color:rgb(0, 0, 0);
+    background:#ffffff;
+}
+.heading {
+    position: relative;
+    top: -30px;
+    font-weight: 100;
+}
+#welcome {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    /* flex-direction: column; */
+    background-image: url("Screenshot\ \(34\).png");
+    background-size: 65vw 87.5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #E7DCD9;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+position: absolute;
+top: 0;
+left: 0;
+}
+#welcome #landingicon {
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+}
+#welcome h1 {
+    font-size: 60px;
+    font-weight: 900;
+    align-self: flex-start;
+    justify-self: flex-start;
+    /* margin-left: 30px; */
+    position: absolute;
+    /* left: 125px; */
+    top: -20px;
+}
+#welcome .github {
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+#login-page {
+    width: 100vw;
+    height: 100vh;
+    display:none;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    flex-direction: column; */
+    background-image: url("giphy.gif");
+    background-size: 50vw 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    background-clip: padding-box;
+    background-color: #4361E5;
+    aspect-ratio: 16 / 9;
+    position: absolute;
+top: 0;
+left: 0;
+}
+.input {
+    width: 350px;
+    height: 50px;
+    border-bottom: 10px solid orange;
+    /* position: relative;
+    top: -15%; */
+    background: black;
+    color: #fff;
+}
+.input::placeholder {
+    color:#F5EEEE;
+}
+#login-page h1 {
+  margin-left: 30px;
+  margin-top: 30vh;
+  font-size: 60px;
+}
+#login-page input[type='text'] {
+    width:450px;
+    height: 80px;
+    border: none;
+    border-bottom: 10px solid rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -33px;
+    margin-left: 30px;
+    background-color: #4361E5;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+#login-page input[type='text']:focus {
+    width: 500px;
+    height: 80px;
+    transition: width 0.5s ease-in-out;
+    outline: none;
+    border-bottom: 10px solid #FDB84B;
+}
+#main {
+    display:flex;
+    flex-direction: column;
+}
+.button-82-pushable {
+    position: absolute;
+    bottom: 5vh;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20vw;
+    height: 10vh;
+    align-self: center;
+    justify-self:flex-end;
+  }
+  #button2 {
+    position: absolute;
+    bottom: 30vh;
+    left: 6vw;
+
+  }
+  .button-82-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+      align-self: center;
+    justify-self: flex-end;
+  }
+  
+  .button-82-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+      to left,
+      #21163C 0%,
+      #21163C 8%,
+      #21163C 92%,
+      #21163C 100%
+    );
+    align-self: center;
+    justify-self: flex-end;
+  }
+  #edge-2 {
+    background: linear-gradient(
+      to left,
+      #0F0F0F 0%,
+      #0F0F0F 8%,
+      #0F0F0F 92%,
+      #0F0F0F 100%
+    );
+  }
+  .button-82-front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    background: #21163C;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+      align-self: center;
+    justify-self: flex-end;
+  }
+  #front-2 {
+    background: #0F0F0F;
+    color: #4361E5;
+  }
+  @media (min-width: 768px) {
+    .button-82-front {
+      font-size: 2.5rem;
+      padding: 12px 42px;
+      align-self: center;
+    justify-self: flex-end;
+    }
+  }
+  
+  .button-82-pushable:hover {
+    filter: brightness(110%);
+  }
+  
+  .button-82-pushable:hover .button-82-front {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-82-pushable:active .button-82-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .button-82-pushable:hover .button-82-shadow {
+    transform: translateY(4px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-82-pushable:active .button-82-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .button-82-pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+  #loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #FFF url("Loading\ Animation.gif") no-repeat center;
+    z-index: 999;
+    aspect-ratio: 16 / 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }

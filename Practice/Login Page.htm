@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <input type="text" id="username" placeholder="Enter your Username">
+    <input type="password" name="" id="password" placeholder='Enter your Password'></input>
+    <input type="submit" value="Submit" onclick="input()">
+    <script>
+        function input() {   
+        let username = document.getElementById('username').value;
+        let password = document.getElementById('password').value;
+        if (username == 'Divyanshu Batta' && password == 'Divyanshu Batta') {
+            alert('Welcome Divyanshu Batta')
+        }
+        else {
+            alert('Incorrect Username or Password');
+        }
+    }
+    </script>
+</body>
+</html>

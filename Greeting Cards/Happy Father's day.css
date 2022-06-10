@@ -1,0 +1,20 @@
+body{
+  display:flex;
+  justify-content:center;
+  background-color:#0088FF;
+  align-items: center;
+}
+img {
+  width:500px;
+  height:300px;
+}
+button{
+  width:500px;
+  height:300px;
+  top:600px;
+  align-items: center;
+  display:block;
+  justify-content:center;
+  position:static;
+  
+}

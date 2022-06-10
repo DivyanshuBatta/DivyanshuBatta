@@ -1,0 +1,30 @@
+body {
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+}
+img {
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-items: center;
+}
+img:hover {
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-items:center;
+  animation: rotate(360deg);
+  animation-name: Spinner;
+  animation-duration: 500s;
+  animation-iteration-count:10;
+}
+@keyframes Spinner {
+  from{
+    transform:rotate(0deg);
+  }
+  to {
+   translate: rotate(360deg)
+  }
+}

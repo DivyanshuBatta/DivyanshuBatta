@@ -1,0 +1,34 @@
+@media screen and (max-width:1424px) {
+    .navbar #text-search {
+        width: 30vw;
+    }  
+}@media screen and (max-width:1216px) {
+    #h1 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:1068px) {
+    .navbar #text-search {
+        width: 40vw;
+    }
+    .main .NotesClass {
+        min-width: 40vw;
+        width: auto;
+        
+        min-height: 25vh;
+        height: auto;
+        margin-top: 8vw;
+    }
+    .main .NotesClass:hover {
+        max-height: 25vh;
+        max-width: 28vw;
+    }
+    .main .NotesClass p {
+        margin-top: 1vw;
+    }
+    .main #your-note {
+        position:absolute;
+        margin-left: 5vw;
+    }
+}
+    

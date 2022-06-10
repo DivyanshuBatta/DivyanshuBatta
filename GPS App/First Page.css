@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+::selection {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+html {
+    font-size: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('gps.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    color: white;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+header .logo {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    left: 0;
+    top: 1%;
+}
+header h3 {
+    font-size: 3.4rem;
+}
+header .start {
+    width: 15vw;
+    height: 9vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 2%;
+    border-radius: 0.5rem;
+}
+header .start:hover {
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+header .start a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+body .gps {
+    /* justify-self: center;
+    align-self: center; */
+     position: absolute;
+    top: 40%;
+   left: 20%;
+    font-size: 6rem;
+    animation: blinkAnimation 4s 1;
+    opacity:1;
+    color:white;
+    z-index: -1;
+    text-shadow:20px 20px 10px black;
+}
+body .h2 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 5rem;
+    animation: h2slideAnimation 4s 1;
+    opacity:1;
+    color:white;
+    z-index: -1;
+}
+body h2.scroll {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    font-size: 3.5rem;
+    /* animation: h2slideAnimation 4s 1; */
+    opacity:1;
+    color:white;
+    z-index: -1;
+}
+#next {
+    width: 20vw;
+    height: 10vh; 
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}   
+@keyframes blinkAnimation {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+@keyframes h2slideAnimation {
+    from {
+        position: absolute;
+        left: -50%;
+        opacity:0;
+}
+to {
+    position: absolute;
+        left: 20%;
+        opacity:1;
+}
+}
+@keyframes h2mobileslideAnimation {
+    from {
+        position: absolute;
+        left: -50%;
+        opacity:0;
+}
+to {
+    position: absolute;
+        left: 9%;
+        opacity:1;
+}
+}
+@keyframes ButtonslideAnimation {
+    from {
+        position: absolute;
+        left: -50%;
+}
+to {
+    position: absolute;
+        left: 45%;
+}
+}
+#home {
+    width: 100vw;
+    height:100vh;
+}
+footer {
+    width: 100vw;
+    height: 10vh;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100vh;
+}
+footer a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    text-decoration:underline;
+}
+body a {
+    cursor: pointer;
+}
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 8.5px;
+    }
+    }
+ @media screen and (max-width:1024px) {
+    html {
+        font-size: 8px;
+    }
+    header .start a {
+        font-size: 2rem;
+    }
+    .home .gps {
+        position: absolute;
+        left: 4%;
+        font-size: 6.3rem;
+    }
+}
+@media screen and (max-width:768px) {
+    html {
+        font-size: 7.5px;
+    }
+   
+    header .start {
+        width: 18%;
+    }
+    body header h3 {
+        position: absolute;
+        left: 12%;
+    }
+    .home .gps {
+        position: absolute;
+        left: 4%;
+        font-size: 5rem;
+    }
+    .home .h2 {
+        position: absolute;
+        left: 9%;
+        font-size: 4rem;
+        animation: h2mobileslideAnimation 4s 1;
+    } 
+}
+@media screen and (max-width:556px) {
+    html {
+        font-size: 7px;
+    }
+    body header h3 {
+        position: absolute;
+        left: 12%;
+    }
+    .home .gps {
+        position: absolute;
+        left: 2%;
+        font-size: 4.5rem;
+    }
+    header .start {
+        display: none;
+    }
+}
+@media screen and (max-width:480px) {
+    html {
+        font-size: 6.5px;
+    }
+    header h3 {
+        position: absolute;
+        left: 50%;
+        font-size: 3.4rem;
+    }
+    .home button#next {
+        width: 50vw;
+        justify-self: center;
+    }
+    header img.logo {
+        display: none;
+    }
+}

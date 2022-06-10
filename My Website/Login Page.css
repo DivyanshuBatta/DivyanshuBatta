@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+* {
+    font-family: 'Proza Libre', sans-serif;
+}
+body{
+    max-width: 1440px;
+    max-height: 1024px;
+}
+input {
+    display: block;
+    margin-bottom:10px;
+    position:relative;
+    left: 5px;
+    top: -300px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid /*rgba(189, 189, 189, 0.849)*/ rgb(82,82, 83);
+    z-index: 1;
+    padding-left:10px;
+    padding-right: 5px;
+    font-size: 17px;
+     font-weight: bold;
+}
+img {
+    width: 475px;
+    height: 470px;
+    position: relative;
+    left: 280px;
+    top: -10px;
+}
+.rect {
+    width: 280px;
+    height: 510px;
+    /*background-color:#faa27c#d3ecff#032bdc#f69a33#5093d4*/;
+    /*background: linear-gradient( 109.6deg,  rgba(39,142,255,1) 11.2%, rgba(98,113,255,0.78) 100.2% );*/
+    /*background: radial-gradient( circle 300px at 8% 89.3%,  rgba(20,157,208,1) 0%, rgba(140,63,226,1) 90% );*/
+    /*background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,230,241,1) 0%, rgba(145,192,241,1) 45.5% );*/
+    background-color: #95beff;
+    position: relative;
+    top: -750px;
+    z-index: -1;
+}
+input[type='submit'] {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(40, 231, 40);
+    position: relative;
+    left: 90px;
+    font-size: 14px;
+    font-weight: bold;
+}
+h1 {
+    font-size:35px; 
+     color: #000;
+    z-index: 1000;
+    position: relative;
+    top: -460px;
+    left: 20px;
+}
+a {
+    text-decoration: none;
+}
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    z-index: 1;
+    position: relative;
+    top: -1160px;
+    left: 54px;
+}
+.back {
+    width: 80px;
+    height: 15px;
+    /*background-color: #d3ecff;*/
+    background-color:#95beff;
+    color:white;
+    font-size: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 22px;
+    position: fixed;
+    top: 10px;
+    left: 640px;
+}
+.back h4 {
+    position: relative;
+    top: -25px;
+}
+#clearuser,#clearpass {
+    width: 55px;
+    height: 30px;
+    background: rgb(40, 231, 40);
+    font-size: 14px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+#clearuser {
+    position: relative;
+    top: -430px;
+    left: 225px;
+}
+#clearpass {
+    position: relative;
+    top: -382px;
+    left: 166px;
+}
+/* #show {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -383px;
+    left: 70px;
+    z-index: 100;
+} */
+/* FOR MY PHONE
+@media screen and (max-width:576px) {
+    .rect {
+        width: 250px;
+        height: 600px;
+    }
+    .profile {
+        position: relative;
+        left: 37px;
+    }
+    input {
+        position: relative;
+        top: -280px;
+        left: 15px;
+    }
+    input[type="submit"] {
+        position: relative;
+        left: 80px;
+    }
+    img {
+        width: 260px;
+        height: 260px;
+        position: relative;
+        top: 100px;
+        left: 275px;
+    }
+    .container {
+        position: relative;
+        top: 150px;
+    }
+    .back {
+        position: relative;
+        left: 400px;
+        top: -1250px;
+    }
+}
+    /*OPPO A5 WIDTH IS   285.732288px*/
+    /*OPPO A15s WIDTH IS 284.976384px*/
+    /*VIVO Y66 WIDTH IS  285.354336px*/
+    /*VIVO V9 WIDTH IS   283.577952px*/
+    /*REDMI K20 WIDTH IS 280.818912px*/
+/* @media screen and (max-width:285.732288px) {
+    img {
+        display: none;
+    }
+    .rect {
+        width: 400px;
+        height: 830px;
+}
+.container {
+    position: relative;
+    top: 400px;
+    left: -10px;
+}
+.profile {
+    display: block;
+    width: 270px;
+    height: 270px;
+    border-radius: 135px;
+    position: relative;
+    top: -1460px;
+    left: 50px;
+}
+input {
+    width: 325px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 25px;
+    position: relative;
+    top: -150px;
+}
+input[type="submit"] {
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 120px;
+    font-size: 24px;
+}
+} */

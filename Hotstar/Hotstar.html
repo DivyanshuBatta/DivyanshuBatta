@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Disney+ Hotstar | Clone</title>
+        <link rel = "icon" href = 
+"https://i.gadgets360cdn.com/large/disney_plus_hotstar_logo_1583901149861.jpg?downsize=950:*" 
+        type = "image/x-icon">
+    <link rel="stylesheet" href="Hotstar.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <script src="Hotstar.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="Disney+ Hotstar" id='logo'>
+        <a class='category' href='https://www.hotstar.com/in/tv'>TV</a> 
+        <a class='category' href='https://www.hotstar.com/in/movies'>Movies</a>
+        <a class='category' href='https://www.hotstar.com/in/sports'>Sports</a>
+        <a class='category' href='https://www.hotstar.com/in/disneyplus'>Disney+</a>
+        <input type="text" class="search" placeholder="Search">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAh1BMVEUAAAD///+goKD29vajo6OqqqrCwsK0tLTz8/O+vr78/Pz4+Phzc3Pg4ODV1dXv7+/Ly8snJyd5eXnAwMBwcHDp6elMTExGRkbj4+OKiorQ0NAWFhY5OTlhYWGAgIAtLS1WVlYQEBAjIyORkZEcHBxnZ2eOjo4yMjKZmZljY2NQUFA/Pz9ZWVmegtGbAAAIeElEQVR4nO2de3fiLBDG4zVGG5NarZd6r1a39vt/vtdE9922GXCAhwo9POfsf1vCTwgDw8wkqhXq9hrZaNLP87ydnBWXan1R85bqP6dvT750sOxzkjzls3466jQavW6JVovO/7LhS/QL9fj8UM9KwvRX8l206pwJR5t7d8OmpmfC93t3wq5mUePeXbCs468nrAdC7xUI/Vcg9F+B0H8FQv8VCP1XIPRfgdB/BUL/FQj9VyD0X4HQfwVC/xUI/Vcg9F8WCTfb+el0mm/vfIduhXC+eGu1+0U8xFmdLJ0lrdfheId/EEdwwvnyaXIN8/imbFZf3yFkAEq4+WhNSLj/1WkPVrjnsQQkfG6O5HhXyHj/oyMJIxzm9NyklE5/cPUBES5vzM7vyo4/xgghVOUrNFqaP5clAOGir85XqL9HANyUMeE21uMr1P6JddWU8KGjD3heVwcgDInMCHcGA3hRbH3FMSJ8Tk0Bz5bjAwdDyoRw2DAHrNW6lhdVA8Ijgq/QEQlUkT5hCwV4fhmhSN+kTWi8xnxWGwv1RbqEbSTg2fqDsT5JkxA6goXsjaIeIeMd7PTLfI24PUsnnF1BC452lRbhzVW031xs//33zeNp8drObvzNKw7qi3QIh/KupgIDt2j3pH9nyS5qEI5lk64TS5IbHqfSTdDYBEQodcKd5LDUPW5v/PVA4umY6EJIpU4oWUYTjsNwKp4CViy/MuFe2L8Zd5aJf6Ohcv9vS5VwI5xlCrvLoWgYG4+K3WdIlVBkCRsLlVYOM0EzFgy/IuG7wGXYV3XZi36ptWI7t6VImMN++rrgp1Jv6daDlAgFtl5rbgk2RnDPjRohbQpzvUfTiHCjqERIWwpNQJHVeNNtTiAlQnIIM/2Ho9sjpUL4Qf7ma/2HH0i7CDb7KoRPVH+M3EjktE9NWqxKgZD8xbVfwosSChF7xlAgnFK9MdxmzSmXa9OszW9SIKTWBWPfA2UyRqaNfhGfcExs2Hrmtw7UTh7q6OcTUpMU4K2mmoV6pfiExJY0A1wcbYn1C7qasgk3RE/qiB5QpwzkzSmbkDD33QOiB2PCA4d0u7EJX6v9mGG6QEz/BNNyKTYhsaGZYrpA/HZIe8EmJDydoNCm52rLNUzLpbiEq+rbAlvxCJP4jGqbT/he7QXMu0mcE0EvQCEuIeG/gC14g2rbwK0pl5DYeqxRfRhX2wYuplzCZrUXc1gnqgcMoMuNS1h9Vzo4/3T1ahHoyuASVo+qI1w0U9USdWBtswmrkQnA7XH15Pn7CYHB51zC6ubRLiEuFNxVQlzjrhL+/BhafQ+dWEsJa4H7mavugzsQVi1+A+Zq2FXPLXew+IQ35YTqw6na9h12bcRBXOnmXqY/1bbvsPMmTk+wiz7i3ALx4l3EJSRcDbC4CeJ6Buhs4xIeqj592GpA5BTdwYtBdQO01FAXIpiWS7EJibBnkKOGWMSQbn024Vu1HyCzTPgpkSF8bMJ1tR+Y2JcF0fADouGr2IQvxG2t4RX3RVTMya0oVRUZ3a4hip0fiIsZaOgXn3BJEAJMInW5BrT3KoRzKg59bfp8ws5CraFSpAI1TY3nExVugg2oUSAknO+1mmEu7wc1hNhcNgXCFypjOzPyC++o7IQuNhRaJeqLDJc0WmzISGFwJLQKIXGHWDO6CHug2kN/b0Mp+pIMCO1qb8CfySxbdBy0EuGJjGMfaTps5nRiA8x1cJVaFDQd1TvR2mSRq4yFUHY1wjmdCpJqlA/aCtKn1upNyaWYjSDIIUiVJ+pJkMWGjKS5dlmN8FGQJzlSDCd8FyQXdZGniotUs4LoBb6maDSWolxLdKB+pJG7RgZ7F4rZW5FHMva5EDjEu5Qy4UqYz5sxh3EorNfTtfFxLfUMS3IDflGfEYM+FqRO2RpCnTxgWS5+fuOsMRZO0FJPuhgS6eRyS6smpVOh5dgNbtYDwxsLLULxq1gqy6fEbN39aXHKud3dHl5Enls/qzuJl+vD9Qp1tX6YtlJutSU4ol7VCMlq8wmz0SnU4FeqK4VOlNWs/EE53lACj6Ju9RZ/ELUr8NhEhE5U/SpKA8X3616IBpWw1kbF6OQCmn6TamYrQLk2kXCjaFZzT74HcwPRsG7iwHCm9mLh24xCNK0MuTIq+pWPxUdq1LtoXr90IK+NJFGjvEMWI2JGEVGDtqnF2P2bRykuOwVBhFTZPWiUb2v/O3/YnaigSsknxVW1/eUSVLyRByDi6nnX2ctqp/XdaWXzXUTWZN8nDMheTsWoWETE1tXf7WPpQT4TFp23N1Hx30Y4LGPSXZglrzJXnBjRcBQtfd/i8HBsJrP+JMsmaT9pHZe3LxltTVSHvlFiCdEhQkvvokuEdt5FpwitTFS3CCWjqO2ecozQAqJrhPiJ6hyhBFFvFN0jlExUrfBvBwnBiC4SSiaqBqKThFBENwmRE9VRQuAoukqIQ3SWUDJR1Uq7uEuIQnSYUOIqVkk5cZlQgqiQsOA0oWSi8oMY3SaUrKhsRMcJo6HwfpEb0Oo6oeRdZOZ3Ok8onqhdXs6V+4TiidpjBZd7QCieqBmnoJoPhOKJykk/8YJQjMjI8/CDMNrToQKcwHBPCKM/5HLD+c6XL4TRnkAccfKtvCGMPqrZiqyvKPhDWI2F5BU294gwev+KyKxZ4RNhNP4cBtFnVlPzivBzRGvOLRfnF2G0+RsKGbPr4XlGeM1iVfmet3eE0TofJSoF/f0jVFUg9F+B0H8FQv8VCP1XIPRfgdB/BUL/FQj9VyD0X4HQfwVC/xUI/Vcg9F+B0H8FQv91jHBfpnJTeWSnpqYzGtQiXuyUr3rJCsJa8jDGfTbVIa0Wb6NaSVgryjg2srSft5M4jlutVrNQ3SeVPT73/Nz/JMln/VGn0buEwv0HksJdkVmug3QAAAAASUVORK5CYII=" alt="Search" onclick="search()" class='submit'>
+        <a href="https://www.hotstar.com/in/subscribe/get-started" id='anchor'><button class="subscribe">SUBSCRIBE </button></a>
+        <span id='login'>LOGIN</span>
+        </div>
+    </header>
+    <div class="slider">
+    </div>
+    <div class="contain">
+    <a href="https://www.hotstar.com/in/list/latest-trending/t-7071_25_2"><h2 class='heading1'>Latest & Trending</h2></a>
+    <div class='row1'>
+        <a href="https://www.hotstar.com/in/tv/dil-bekaraar/1260072917" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6783/1086783-v-987c1faa6265" alt="Dil Bekaraar" id="first" class='movies'></a>
+        <a href="https://www.hotstar.com/in/tv/hawkeye/1260073683" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3022/1083022-v-90c34f714f7a" alt="Hawkeye" id="second" class='movies'></a>
+        <a href="https://www.hotstar.com/in/movies/cash/1260073268" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/473/1080473-v-d97e637cb29d" alt="Cash" id="third" class='movies'></a>
+        <a href="https://www.hotstar.com/in/movies/shangchi-and-the-legend-of-the-ten-rings/1260072682" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8723/1078723-v-a1a04c7474f9" alt="Shangchi and The Legend of Ten Rings" id="fourth" class='movies'></a>
+        <a href="https://www.hotstar.com/in/tv/special-ops-15/1260071971" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3869/1083869-v-cf73d8947672" alt="Special Ops 1.5" id="fifth" class='movies'></a>
+        <a href="https://www.hotstar.com/in/movies/hum-do-hamare-do/1260072216" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4299/1074299-v-a4563c5fe889" alt="Hum Do Hamare Do" id="sixth" class='movies'></a>
+        <a href="https://www.hotstar.com/in/movies/free-guy/1260071301" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8804/1068804-v-900825dcd2d0" alt="Free Guy" id="seventh" class='movies'></a>
+        <a href="https://www.hotstar.com/in/movies/sanak/1260071233" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8407/1068407-v-0b0cfa8d9f74" alt="Sanak" id="eighth" class='movies'></a>
+    </div>
+    <a href="https://www.hotstar.com/in/list/best-in-sports/t-6517"><h2 class="heading2">Best in Sports</h2></a>
+    <div class="row2">
+        <a href="https://www.hotstar.com/in/sports/cricket/new-zealand-tour-of-india-2021/m704169/live-streaming/1540010049" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6772/1086772-h-19dc0864c2aa" alt="India vs Newzealand 2nd Test, Day 1" id="test-cricket" class='sports'></a>
+        <a href="https://www.hotstar.com/in/sports/hockey/belgium-vs-spain/1540010290" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6755/1086755-h-4a9d189abc4b" alt="Belgium vs Spain" id="hockey" class='sports'></a>
+        <a href="https://www.hotstar.com/in/sports/badminton/group-a-christophersen-vs-li/1540010338" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6546/1086546-h-401d2c7d835b" alt="Group A: Christophersen vs Li" id="badminton" class='sports'></a>
+        <a href="https://www.hotstar.com/in/sports/badminton/highlights-kidambi-fails-to-make-sf/1260075003" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6767/1086767-h-b7e29df9dea7" alt="Kidambi Fails to make SF" id="test" class='sports'></a>
+        <a href="https://www.hotstar.com/in/sports/badminton/group-a-chochuwong-vs-sindhu/1540010338" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6550/1086550-h-1efb808df9a7" alt="Chochuwong vs Sindhu" id="last" class='sports'></a>
+        <a href="https://www.hotstar.com/in/sports/cricket/new-zealand-tour-of-india-2021/704169/match-clips/spinners-put-india-on-cusp-of-victory/1540010057" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/7573/1087573-h-2d22b6bdb29a" alt="Spinners Put India on Cusp of Victory" id="last" class='sports'></a>
+    </div>
+    <a href="https://www.hotstar.com/in/list/popular-shows/t-5590_25_2"><h2 class="heading3">Popular Shows</h2></a>
+    <div class="row3">
+        <a href="https://www.hotstar.com/in/tv/anupama/1260022017" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/8774/1028774-v-85c7d8f07559" alt="Anupama" id="Anupama" class='shows'></a>
+        <a href="https://www.hotstar.com/in/tv/yeh-rishta/586" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4516/1074516-v-2f4f07b1e4ec" alt="Yeh Rishta" id="Rishta" class='shows'></a>
+        <a href="https://www.hotstar.com/in/tv/bigg-boss/14714" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2688/1052688-v-33160b2f1eb2" alt="Bigg Boss" id="BiggBoss" class='shows'></a>
+        <a href="https://www.hotstar.com/in/tv/ghum-hai-kisikey/1260043179" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3007/1073007-v-a7de9b990ca9" alt="Ghum Hai Kisikey" id="Kisikey" class='shows'></a>
+        <a href="https://www.hotstar.com/in/tv/bigg-boss/14455" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3894/1063894-v-36910d21a4ee" alt="Bigg Boss" id="BiggBoss2" class='shows'></a>
+        <a href="https://www.hotstar.com/in/tv/imlie/1260048110" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/896/830896-v" alt="Imlie" id="Imlie" class='shows'></a>
+        <a href="https://www.hotstar.com/in/tv/pandya-store/1260053090" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1041/951041-v" alt="Pandya Store" id="store" class='shows'></a>
+        <a href="https://www.hotstar.com/in/tv/tera-mera-saath-rahe/1260066571" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8858/1058858-v-ce3304123423" alt="Tera Mera Sath Rahe" id="store" class='shows'></a>
+    </div>
+    <a href="https://www.hotstar.com/in/list/movies-recommended-for-you/t-6520_25_2"><h2 class="heading4">Movies Recommended For You</h2></a>
+    <div class="row4">
+        <a href="https://www.hotstar.com/in/movies/baaghi-3/1260025583" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6536/846536-v" alt="Baaghi 3" id="Baaghi" class='recommended'></a>
+        <a href="https://www.hotstar.com/in/movies/chhichhore/1260012713" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/896/580896-v" alt="Chhichhore" id="Chhichhore" class='recommended'></a>
+        <a href="https://www.hotstar.com/in/movies/tanhaji/1260022117" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7676/647676-v" alt="Tanhaji" id="Tanhaji" class='recommended'></a>
+        <a href="https://www.hotstar.com/in/movies/housefull-4/1260014263" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3669/593669-v" alt="Housefull 4" id="Housefull" class='recommended'></a>
+        <a href="https://www.hotstar.com/in/movies/mission-mangal/1260011536" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1529/571529-v" alt="Mission Mangal" id="Mangal" class='recommended'></a>
+        <a href="https://www.hotstar.com/in/movies/ms-dhoni-the-untold-story/1770003314" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/3314/1770003314/1770003314-v" alt="MS Dhoni:The Untold Story" id="MSDhoni" class='recommended'></a>
+        <a href="https://www.hotstar.com/in/movies/super-30/1260009172" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6828/556828-v" alt="Super 30" id="t30" class='recommended'></a>
+        <a href="https://www.hotstar.com/in/movies/total-dhamaal/1000233697" class='linker'><img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8285/388285-v" alt="Total Dhamaal" id="t30" class='recommended'></a>
+    </div>
+</div>
+</body>
+</html>

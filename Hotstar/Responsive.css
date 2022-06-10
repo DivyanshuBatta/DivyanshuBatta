@@ -1,0 +1,165 @@
+@media (max-width: 1135px) {
+    html {
+      font-size: 22px;
+    }
+    .navbar {
+      display: flex;
+    }
+    .search {
+      width: 10.5rem;
+    }
+    .search:focus 
+    {
+      width:12rem;
+    }
+    .movies,
+    .sports,
+    .shows,
+    .recommended {
+      /* justify-content: space-around; */
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
+    }   
+     .row1,
+    .row2,
+    .row3,
+    .row4 {
+      display: inline-flex;
+      justify-content: center;
+      /* flex-shrink: 2; */
+      flex-wrap: wrap;
+    }
+    .heading1 {
+      margin-top: -4rem;
+    }
+    .heading1,
+    .heading2,
+    .heading3,
+    .heading4 {
+      word-wrap: normal;
+    }
+    #seventh {
+      position: relative;
+      top: 22rem;
+    }
+    #last {
+      position: relative;
+      top: 19rem;
+    }
+    #store {
+      position: relative;
+      top: 16rem;
+      left: 0rem;
+    }
+    #t30 {
+      position: relative;
+      top: 13rem;
+      left: 0rem;
+    }
+    .slider {
+      height: 70vh;
+    }
+    .submit {
+      /* position: relative;
+      left: -1rem; */
+      justify-self: flex-end;
+    }
+    @keyframes slider {
+      25% {
+        background-image: url("https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1259/1081259-h-adad75acd454");
+        background-size: 88.5vw 70vh;
+      }
+      50% {
+        background-image: url("https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2639/1082639-h-197d7d6ae470");
+        background-size: 88.5vw 70vh;
+      }
+      75% {
+        background-image: url("https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3933/1083933-h-61502ca0d21c");
+        background-size: 88.5vw 70vh;
+      }
+      100% {
+        background-image: url("https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2687/1052687-h-20cbf695bb0a");
+        background-size: 88.5vw 70vh;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .category {
+      display: none;
+    }
+  }
+  @media (max-width: 725px) {
+    html {
+      font-size:22px;
+    }
+    .search {
+      width: 7.608695rem;
+      height: 1.73913rem;
+    }
+    .search:hover {
+      width: 7.608695rem;
+    }
+    .heading1 {
+      margin-top: -22rem;
+    }
+    .slider {
+      position: relative;
+      left: 1rem;
+      top: 2rem;
+    }
+    .submit {
+      position: relative;
+      left: 6rem;
+    }
+  }
+  @media (max-width: 633px) {
+    html {
+      font-size: 25px;
+    }
+    .recommended,
+    .movies,
+    .shows,
+    .sports {
+      margin-top: -1rem;
+    }
+    #t30,
+    #MSDhoni,
+    #Mangal,
+    #Housefull,
+    #Tanhaji {
+      margin-top: -2.5rem;
+    }
+    #logo {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    .search {
+      width: 6rem;
+      height: 1.6rem;
+    }
+    .search:hover {
+      width: 6rem;
+    }
+    .slider {
+      height: 68vh;
+      width: 85vw;
+      position: relative;
+      left: 1rem;
+      margin-bottom: -7rem;
+    }
+    .heading1 {
+      margin-top: -16rem;
+    }
+    .heading1,.heading2,.heading3,.heading4 {
+      margin-bottom: 2rem;
+    }
+  }
+  @media (max-width: 588px) {
+    .search {
+      width: 4.347826rem;
+    }
+    .search:hover {
+      width: 4.347826rem;
+    }
+  }
+  

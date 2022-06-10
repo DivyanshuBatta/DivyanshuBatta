@@ -1,0 +1,31 @@
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing {
+    font-size: 50px;
+    position: relative;
+    width: max-content;
+  }
+  .typing::before,
+  .typing::after {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+.typing::before {
+  background: blue;
+  position: absolute;
+  animation: typing 10s steps(5);
+}
+  @keyframes typing {
+    to {
+      left: 100%;
+    }
+  }

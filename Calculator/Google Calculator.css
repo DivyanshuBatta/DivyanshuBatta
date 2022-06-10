@@ -1,0 +1,111 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Product Sans',sans-serif;
+  border:none;
+}
+body {
+  display:flex;
+  justify-content: center;
+  justify-items: center;
+  background: #FFFFFF;
+  position:relative;
+  width:100px;
+  height:100px;
+}
+.calculator {
+  position:relative;
+  display:grid;
+  top:-40px;
+  left: 400px;
+}
+.calculator .value
+{
+  grid-column: span 4;
+  height:200px;
+  text-align:right ;
+  outline: none;
+  font-size: 50px;
+  width:330px;
+  position:relative;
+  top:60px;
+}
+.calculator .value:before
+{
+  grid-column: span 4;
+  height:200px;
+  text-align:right ;
+  outline: none;
+  font-size: 50px;
+  width:330px;
+  position:relative;
+  top:60px;
+}
+.calculator .value:hover
+{
+  filter:invert(1);
+}
+.calculator span
+{
+  display:grid;
+  width:80px;
+  height:70px;
+  color:#EC940C;
+  background: #FFFFFF;
+  place-items: center;
+  font-size: 30px;
+}
+.calculator span:active
+{
+  background: #FFFFFF;
+  color:#111;
+}
+.calculator span.clear
+{
+  grid-column: span 2;
+  width:60px;
+  background:#FFFFFF;
+  color:#FE9A01;
+  position:relative;
+  left:290px;
+  top:68px;
+  color:#006DFF;
+}
+.calculator span.plus 
+{
+grid-row:span 2;
+height:60px;
+background:#FFFFFF;
+color:orange;
+position:relative;
+left:-20px;
+top:135px;
+color:#006DFF;
+}
+.calculator span.num1 {
+  color:#000000;
+  position:relative;
+  left:-20px;
+}
+.calculator span.numminus {
+  position:relative;
+  top:140px;
+  left:-20px;
+  color:#006DFF;
+}
+.calculator span.nummultiply
+{
+  position:relative;
+  top:140px;
+  left:-20px;
+  color:#006DFF;
+}
+.calculator span.numdivide
+{
+  position: relative;
+  top:70px;
+  left:75px;
+  width:50px;
+  color:#006DFF;
+}

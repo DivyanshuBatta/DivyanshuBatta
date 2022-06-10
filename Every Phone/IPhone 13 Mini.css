@@ -1,0 +1,122 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.front {
+    width: 175px;
+    height: 313px;
+    border: 7px solid black;
+    border-radius: 22px;
+    background-color: rgba(0, 0, 0, 0.774);
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    z-index: 1;
+}
+.front:hover {
+    background-image: url('https://i.im.ge/2021/09/24/Txd8Dz.jpg');
+    background-repeat: no-repeat;
+    background-size: 178px 310px;
+    transition: 5s;
+}
+.notch {
+    width: 90px;
+    height: 20px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    left: 40px;
+    top: -6px;
+}
+.back {
+    width: 194px;
+    height: 328px;
+    border-radius: 22px;
+    background:linear-gradient(#272e36,#161d25);
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: -310px;
+}
+.box {
+   width: 75px;
+   height: 75px;
+   background: #3e3f49;
+   border-radius: 20px;
+   position: relative;
+   top: 7px;
+   left: 7px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.camera {
+width: 35px;
+    height: 35px;
+    border-radius: 17.5px;
+    background-color: #252629;
+    position: relative;
+    top: -8px;
+    left: 5.8px;
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.camera2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 17.5px;
+    background-color: #252629;
+    position: relative;
+    top: -12.2px;
+    left: 32px;
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.lens1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #4c566d;
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 12px;
+}
+.lens2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #4c566d;
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 12px;
+}
+img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 130px;
+    left: 0px;
+}
+.front:active {
+    transform: rotateY(180deg);
+    position: relative;
+    z-index: 0;
+}
+.flash {
+    width: 14px;
+    height: 14px;
+    background: #dcd7c8;
+    position: relative;
+    top: 15px;
+    left: 48px;
+    border-radius: 7px;
+}
+img {
+    border-radius: 22px;
+}
+h1 {
+    position: relative;
+    top: 30px;
+    left: 200px;
+}

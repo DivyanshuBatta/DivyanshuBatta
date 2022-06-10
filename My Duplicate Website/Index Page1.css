@@ -1,0 +1,45 @@
+body {
+  height: 500px;
+}
+  a:link {
+  text-decoration: none;  
+}
+a:hover {
+  color: red;
+  cursor:pointer;
+}
+.heading {
+  width: 200px;
+  min-height: 30px;
+  background-color: #069FE1;
+  font-size: 20px;
+  color:#FFF;
+  text-align: center;
+  border-radius: 30px;
+}
+.Text {
+  text-align: center;
+  width: 150px;
+}
+.Queries {
+  width: 150px;
+  height: 70px;
+  background-color: #069FE1;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  border: none;
+}
+.Homework {
+  width: 200px;
+  height: 70px;
+  background-color: #069FE1;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 15px;
+  border: none;
+  position: relative;
+  top: -5px;
+}

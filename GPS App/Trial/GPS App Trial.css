@@ -1,0 +1,471 @@
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    top: 1%;
+}
+
+.navbar img {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+}
+
+main {
+    width: 100vw;
+    position: relative;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+input[type='text'] {
+    width: 50vw;
+    height: 10vh;
+    border: none;
+    border-bottom: 1rem solid black;
+    padding-bottom: -5rem;
+    font-family: 'Rubik', sans-serif;
+    margin-top: -2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border-bottom: 1rem solid rgb(255, 145, 0);
+    font-size: 2.5rem;
+}
+
+input[type='submit'] {
+    width: 20vw;
+    height: 10vh;
+    margin-top: 1rem;
+    background: orange;
+    border: .2rem solid black;
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+
+input[type='submit']:hover {
+    box-shadow: 0 0.4rem 0.6rem 0 rgb(32 33 36 / 28%);
+}
+
+#login {
+    width: 100vw;
+    height: 100vh;
+}
+
+#home {
+    display: none;
+}
+
+#home nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#home nav .logo2 {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+}
+
+#home nav h2 {
+    font-size: 3.5rem;
+}
+
+#home nav .profile {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+#home>h1,
+h2 {
+    margin-left: 3rem;
+}
+
+#home>h2 {
+    margin-left: 6rem;
+    position: relative;
+    top: -2rem;
+    font-size: 3rem;
+}
+
+#class {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#home .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#home .container .box {
+    width: 25vw;
+    height: 50vh;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    top: -1rem;
+    left: 1.5rem;
+    border-radius: 2.1rem 2.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    border: 0.2rem solid rgb(243, 243, 243);
+    /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
+    /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
+    /*box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;*/
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    /*background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+    /*box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 16%);*/
+    background-color: #fefefe;
+    margin-bottom: 3rem;
+}
+
+#home .container .box:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+#home .container .box img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 7.5rem;
+    /* position: relative;
+    left: 60px; */
+}
+
+#home .container .box h1 {
+    font-size: 2.2rem;
+}
+
+#home .container .box h2 {
+    font-size: 1.7rem;
+    justify-content: center;
+}
+
+#home .container .box button {
+    width: 7rem;
+    height: 3rem;
+    display: block;
+    margin: auto;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+#home .container .box a {
+    text-decoration: none;
+    color: black;
+}
+
+#home nav button {
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: -15%;
+    position: absolute;
+    right: 10%;
+}
+
+#home nav button:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    border-radius: 1.5rem;
+}
+
+#section {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#syllabus {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#syllabus h1 {
+    font-size: 5.4rem;
+}
+
+#class h1 {
+    font-size: 4.5rem;
+}
+
+#class input[type='text'],
+input[type='submit'] {
+    position: relative;
+    top: 8%;
+}
+@media screen and (max-width:1257px) {
+    #home nav button {
+        width: 15vw;
+    }
+    #home nav h2 {
+        position: relative;
+        left: -8vw;
+    }
+}
+@media screen and (max-width:976px) {
+    #home .container .box h1 {
+        font-size: 1.8rem;
+    }
+    #home nav h2 {
+        position: relative;
+        left: -1vw;
+    }  
+}
+@media screen and (max-width:883px){
+    #home nav button {
+        width: 100vw;
+    height: 7vh;
+    position: absolute;
+    top: 13%;
+    justify-self: center;
+    z-index: -1;
+}
+}
+@media screen and (max-width:810px) {
+    #home .container .box h2 {
+        font-size: 1.5rem;
+    }  
+}
+@media screen and (max-width:770px) {
+    #home .container .box {
+        width: 35vw;
+    }
+    #home .container .box h1 {
+        font-size: 2rem;
+    }  
+    #home .container .box h2{
+        font-size: 1.5rem;
+    }
+    #section main h1 {
+        font-size: 4.8rem;
+    }
+}
+@media screen and (max-width:696px) {
+    #home nav h2 {
+        font-size: 3rem;
+    }
+    .navbar h3 {
+        font-size: 3rem;
+        position: absolute;
+        right: 10%;
+    }
+    #login main h1 {
+        font-size: 5rem;
+    }
+    input[type='text'] {
+        width: 80vw;
+    }
+    #class main h1 {
+        font-size: 3.5rem;
+    }
+    #section main h1 {
+        font-size: 3.5rem;
+    }
+    #home nav button {
+        position: absolute;
+        top: 10.5%;
+        justify-self: center;
+    }
+}
+@media screen and (max-width:640px) {
+     .navbar h3 {
+        font-size: 2.8rem;
+    }
+    .navbar img {
+        display: none;
+    }
+    #home nav img {
+        display: none;
+    }
+}
+@media screen and (max-width:591px) {
+    #home nav h2 {
+        position: relative;
+        left: -4%;
+        font-size: 2.7rem;
+    }
+    #home .container div#homework h1 {
+        font-size: 1.6rem;
+    }
+    #home h1 {
+        position: relative;
+        left: -3%;
+    }
+    #home h2 {
+        position: relative;
+        left: -4%;
+    }
+}
+@media screen and (max-width:487px) {
+    #home > h2 {
+        font-size: 2.5rem;
+    }
+    #home > h1,h2 {
+    position: relative;
+    left:-5%;
+    }
+}
+@media screen and (max-width:472px) {
+    .navbar h3 {
+        font-size: 2.6rem;
+        position: absolute;
+        right: 5%;
+    }
+    #login main h1 {
+        font-size: 3.6rem;
+    }
+     main input[type='submit'] {
+        width: 50vw;
+    }
+    #home nav h2 {
+        font-size: 2.5rem;
+    }
+    #home h1 {
+        font-size: 2rem;
+    }
+    #home nav button {
+        position: absolute;
+        top: 9.5%;
+        justify-self: center;
+    }
+}
+@media screen and (max-width:445px) {
+    #home > h1 {
+        font-size: 1.8rem;
+    }
+    #home > h2 {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:436px) {
+    #home .container .box {
+        width: 60vw;
+    }
+}
+@media screen and (max-width:413px) {
+    #home > h1 {
+        font-size: 1.7rem;
+    }
+    #home nav button {
+        position: absolute;
+        top: 9%;
+        justify-self: center;
+    }
+}
+@media screen and (max-width:413px) {
+    .navbar h3 {
+        font-size: 2.2rem;
+        position: absolute;
+        right: 5%;
+    }
+    main h1 {
+        font-size: 2rem;
+    }
+     main input[type='text'] {
+        position: relative;
+        top: 2vw;
+    }
+    main input[type='submit'] {
+        width: 50vw;
+    }
+    #home > h1 {
+        font-size: 1.5rem;
+    }
+    #home .nav .h2 {
+        font-size: 2.2rem;
+    }
+    #home nav button {
+        position: absolute;
+        top: 7%;
+        justify-self: center;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:369px) {
+    #home .nav .h2 {
+        font-size: 2rem;
+    }
+    #home > h1 {
+        font-size: 1.35rem;
+    }
+}
+@media screen and (max-width:341px) {
+    #home > h1 {
+        margin-bottom: -0.1rem;
+    }
+    #home > h2 {
+        /* margin-top: 0.5rem; */
+        margin-bottom: -0.05rem;
+    }
+    .navbar h3 {
+        font-size: 2rem;
+        position: absolute;
+        right: 5%;
+    }
+    #login main h1 {
+        font-size: 3.3rem;
+    }
+    #home .nav h2.h2 {
+        font-size: 1.8rem;
+
+    }
+}

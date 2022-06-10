@@ -1,0 +1,7 @@
+Good Evening Sir
+I am Divyanshu Batta Class:VIII-BOLD
+I have tried to code 100% working Google Home Page.
+I haven't made it responsive yet.
+It is just a layout.
+Hope you Like it!
+Thanks!

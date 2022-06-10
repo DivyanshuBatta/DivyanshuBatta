@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+    <input type="number" id="principal" placeholder="Enter the Principal">
+    <input type="number" id="rate" placeholder="Enter the Rate">
+    <input type="number" id="time" placeholder="Enter the Time">
+    <input type="submit" value="Submit" id
+    ='submit' onclick="simple()">
+    <div id="output"></div>
+    NEW AMOUNT:<span id="amount"></span>
+    SIMPLE INTEREST:<span id="s"></span>
+    <script>
+        function simple() {
+        let principal = document.getElementById('principal').value;
+        let rate = document.getElementById('rate').value;
+        let time = document.getElementById('time').value;
+        // let span = document.getElementsByClassName('s').value;
+        let submit = document.getElementsByClassName('submit').value;
+
+       let si = principal*rate*time/100;
+       document.getElementById('s').innerHTML = si;
+       let amount = Number(principal) + Number(si);
+       document.getElementById('amount').innerHTML = amount;
+       let date = new Date();
+            let year = parseInt(date.getFullYear())+parseInt(time);
+       let output = `<h3>If you deposit ${principal}<br>,
+        at a rate of ${rate}% <br>,for a time period of ${time} years<br>,you will recieve ${amount} in year ${year}`;
+        document.getElementById('output').innerHTML = output;
+        if (principal == '') {
+        document.getElementById('output').innerHTML = 'Enter a Valid Number';
+        }
+        if (rate == '') {
+        document.getElementById('output').innerHTML = 'Enter a Valid Number';
+        }
+        if (time == '') {
+        document.getElementById('output').innerHTML = 'Enter a Valid Number';
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All In One Calculator</title>
+    <link rel="stylesheet" href="All in One Calculator.css">
+</head>
+<body>
+  <div id="loader"></div>
+    <div id="welcome">
+        <!-- <img src=".png" alt="" class="calculator"> -->
+        <img src="Screenshot (35).png" alt="" id="landingicon">
+        <a href="https://github.com/DivyanshuBatta/DivyanshuBatta">
+          <img src="github.png" alt="Github" class="github">
+        </a>
+        <h1>All in One Calculator</h1>
+        <button class="button-82-pushable" role="button" id="button1" onclick="loginpage()">
+            <span class="button-82-shadow" id="shadow-1"></span>
+            <span class="button-82-edge" id="edge-1"></span>
+            <span class="button-82-front text" id="front-1"> 
+              NEXT
+            </span>
+          </button>
+    </div>
+    <div id="login-page">
+        <!-- <img src="https://static.vecteezy.com/system/resources/thumbnails/004/607/791/small/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector.jpg" alt="" class="user"> -->        
+    <h1>What's your Name?</h1>
+    <input type="text" id="name" value='' placeholder="Enter your Name" required aria-label="" required>
+    <button class="button-82-pushable" role="button" id="button2" onclick="mainpage()">
+        <span class="button-82-shadow" id="shadow-2"></span>
+        <span class="button-82-edge" id="edge-2"></span>
+        <span class="button-82-front text" id="front-2">
+          NEXT
+        </span>
+      </button>
+</div>
+    <div id="main">
+      <nav>
+        <ul>
+          <li><img src="Logo.png" alt="All in One Calculator"></li>
+          <li>All In One Calculator</li>
+          <li>
+            <img
+          src="https://avatars.dicebear.com/api/micah/:seed.svg"
+          alt=""
+          class="profile"
+          id="profile"
+        />
+          </li>
+        </ul>
+      </nav>
+        <div id="salutation"></div>
+        <h2>Nice to Meet You</h2>
+        <h2>What do you want to Calculate?</h2>
+    </div>
+    <script src="All in One Calculator.js"></script>
+</body>
+</html>

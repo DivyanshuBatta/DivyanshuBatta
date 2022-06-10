@@ -1,0 +1,15 @@
+Good Evening Sir!
+I am Divyanshu Batta Class:VIII-BOLD
+I have coded the Students GPS Gobindgarh app.
+I have made it for replacing the school app.
+I have also hosted the app. 
+Link:https://divyanshubatta.github.io
+
+Some Features:
+    1. It is 100% Responsive for every single device.
+    2. There is a login Page system in which once all the asked credentials given, you do not have to reenter the credentials . You will always be redirected to the Home Page only. It will act as a Login Page System.
+    3. There is also a Log Out button using which you can log out and reenter the new credentials.
+
+Sir, If you have any suggestions, you can message me.
+Hope you Like it!
+Thanks!

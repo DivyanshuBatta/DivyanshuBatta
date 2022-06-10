@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+</head>
+<body>
+    <h1>Temperature Convertor</h1>
+    Fahrenheit:<input type="number" value="" id="fahren" oninput="fahrenheit(this.value)"
+    onchange="fahrenheit(this.change)"><br>
+    Celsius:<input id="celsius" type='number' value='' oninput='Celsius(this.value)'
+    onchange='Celsius(this.value)'><br>
+    <button id="dark" onclick="Dark()">Dark</button>
+    <script>
+        function fahrenheit(num) {
+            num = parseFloat(num);
+            document.getElementById('celsius').value = (num-32) / 1.8;
+        }
+        function Celsius(num2) {
+            num2 = parseFloat(num2);
+            document.getElementById('fahren').value = (num2*1.8) + 32;
+        }
+        function Dark() {
+            let btn = document.getElementById('dark');
+            document.body.style.background = '#02030f';
+            document.body.style.color = 'white';
+            btn.innerText = 'Light';
+        }
+    </script>
+</body>
+</html>

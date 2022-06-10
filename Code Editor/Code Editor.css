@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea {
+    width: 95vw;
+    height: 95vh;
+    font-size: 28px;
+    display: block;
+    word-wrap: normal;
+}
+button {
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    bottom: 4vh;
+    right: 4vw;
+}
+#output {
+    display: none;
+}

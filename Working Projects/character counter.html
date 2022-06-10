@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+</head>
+<body>
+    <input type="text" name="Type something" id="type">
+    <span id="character">The No of characters are:</span>
+</body>
+<script>
+    /*function typing() {
+    let type = document.getElementById('type').value;
+    document.getElementById('character').innerHTML = type.length;
+    }*/
+let character = document.getElementById("character").textContent;
+character.addEventListener("input",function(){
+    let type = document.getElementById("type").length;
+    character += type;
+})
+</script>
+</html>

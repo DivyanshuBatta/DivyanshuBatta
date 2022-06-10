@@ -1,0 +1,122 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  border:none;
+}
+body {
+  display:flex;
+  justify-content: center;
+  justify-items: center;
+  background: #ffffff;
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.calculator {
+  display:grid;
+  background-color: #f0f0f0 /*#e9e9e9*/;
+  height: 450px;
+  border-radius: 30px;
+  border: 7px solid black;
+  background-position: center;
+  width: 340px;
+}
+.calculator .value
+{
+  grid-column: span 4;
+  height:95px;
+  text-align:right;
+  outline: none;
+  font-size: 30px;
+  width:320px;
+  position:relative;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #bcd1d0;
+  border-radius: 15px;
+  position: relative;
+  top: 10px;
+  left: 3px;
+  padding: 13px 13px;
+  box-shadow:inset 3px 3px 2px #ffffff,
+             inset -3px -3px 2px #ffffff;
+}
+.calculator span
+{
+  display:grid;
+  width:70px;
+  height:55px;
+  color:#ffffff;
+  background: #000000;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 13px;
+  position: relative;
+  top: 30px;
+  margin-top: -10px;
+  box-shadow:inset 3px 3px 3px #ffffff,
+             inset -3px -3px 3px #ffffff;
+}
+.calculator span:active
+{
+  background: #a8a8a8;
+  color:#111;
+}
+.calculator span.clear
+{
+  grid-column: span 2;
+  width:120px;
+  background:#d37324;
+  color:#ffffff;
+  position: relative;
+  top: 17px;
+  left: 20px;
+}
+.calculator span.plus 
+{
+grid-row:span 2;
+height:120px;
+background:#888585;
+color:#ffffff;
+position: relative;
+top: 23px;
+}
+.calculator span.equal
+{
+  background:#49e23b;
+  color:#ffffff;
+  border-radius: 100px;
+  position:relative;
+  top: 5px;
+}
+.calculator span.num2 {
+  background-color: #888585;
+  font-size: 30px;
+  position: relative;
+  top: 17px;
+}
+.calculator span.num1 {
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+.calculator span.num3 {
+  margin-top: -30px;
+}
+.calculator span.num4 {
+  margin-top: -40px;
+}
+.calculator span.num2:active {
+  background-color: white;
+}
+.calculator span.plus:active {
+  background-color: white;
+}
+.calculator span.equal:active {
+  background-color: white;
+}
+.calculator span.clear:active {
+  background-color: white;
+}

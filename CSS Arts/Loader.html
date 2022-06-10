@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+</head>
+<body>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .line {
+            width: 10px;
+            height: 25px;
+            margin: 0px 10px;
+            background-color: black;
+            animation: animate 2s infinite;
+            border-radius: 12.5px;
+        }
+        #line-1 {
+            animation-delay: 1s;
+        }
+        #line-2 {
+            animation-delay: 1.5s;
+        }
+        #line-3 {
+            animation-delay: 2s;
+        }
+        #line-4 {
+            animation-delay: 2.5s;
+        }
+        #line-5 {
+            animation-delay: 3s;
+        }
+        @keyframes animate {
+            from {
+                height: 25px;
+        }
+        to {
+            height:50px;
+        }
+        }
+    </style>
+    <div class="container">
+        <span id="line-1" class="line"></span>
+        <span id="line-2" class="line"></span>
+        <span id="line-3" class="line"></span>
+        <span id="line-4" class="line"></span>
+        <span id="line-5" class="line"></span>
+    </div>
+</body>
+</html>
