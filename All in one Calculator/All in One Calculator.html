@@ -58,7 +58,7 @@
           </li>
         </ul>
       </nav>
-        <div id="salutation"></div>
+        <div id="salutation"></div> 
         <h2>Nice to Meet You</h2>
         <h2>What do you want to Calculate?</h2>
 
@@ -67,9 +67,9 @@
         <div id="Finance">
           <h3 id="Finance_Heading">Finance</h3>
             <div id="Finance_1">
-              <h4>Simple Interest</h4>
-              <img src="" alt="">
-              <p></p>
+              <h4>Compound Interest</h4>
+              <img src="Compound Interest.png" alt="Compound Interest">
+              <p>To find the interest compounded on the principal amount for some time </p>
               <button class="button-82-pushable" role="button" id="button1">
                 <span class="button-82-shadow" id="shadow-finance"></span>
                 <span class="button-82-edge" id="edge-finance"></span>
@@ -81,6 +81,41 @@
         </div>
       </div>
 </div>
+
+
+
+<!-- Finance Calculators -->
+<div id="Finance_1_calc">
+          <div id="Finance_1_card">
+            <h1 id="Finance_1_heading">Compound Interest Calculator</h1>
+    <div class="Finance_1_card_wrapper" id="first_wrapper">
+            <label for="Finance_1_input_1">Principal(<i class="fa-solid fa-indian-rupee-sign"></i>):</label>
+          <input type="number" id="Finance_1_input_1" placeholder="Enter Principal Amount">
+        </div>
+    <div class="Finance_1_card_wrapper">
+        <label for="Finance_1_input_2">Rate of Interest(%):</label>
+          <input type="number" id="Finance_1_input_2" placeholder="Enter Rate of Interest">
+        </div>
+    <div class="Finance_1_card_wrapper">
+        <label for="Finance_1_input_3">Time:</label>
+            <input type="number" id="Finance_1_input_3" placeholder="Enter the amount of Time">
+    <select name="duration" id="duration">
+      <option value="year">Year</option>
+      <option value="month">Month</option>
+      <option value="month">Day</option>
+    </select>
+          </div>
+            <button class="button-82-pushable" role="button" id="button_finance_1_calc" onclick="calculate(); buttonDisappear();">
+              <span class="button-82-shadow" id="shadow_finance_1_calc"></span>
+              <span class="button-82-edge" id="edge_finance_1_calc"></span>
+              <span class="button-82-front text" id="front_finance_1_calc"> 
+                CALCULATE
+              </span>
+            </button>
+            <div id="Finance_1_result"></div>
+          </div>
+</div>
     <script src="All in One Calculator.js"></script>
+    <script src="https://kit.fontawesome.com/566bdd9733.js" crossorigin="anonymous"></script>
 </body>
 </html>
