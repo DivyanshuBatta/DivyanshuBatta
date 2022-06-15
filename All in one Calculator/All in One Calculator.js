@@ -42,3 +42,12 @@ var animation_loader = document.getElementById("loader");
 window.addEventListener("load", function(){
     animation_loader.style.display = "none";
 })
+let profile = document.getElementById("profile");
+let randomNum = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+];
+
+function random() {
+  return parseInt(Math.random() * randomNum.length);
+}
+profile.src = `https://avatars.dicebear.com/4.9/api/micah/:seed${random()}.svg`;

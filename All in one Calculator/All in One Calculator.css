@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 * {
-font-family: 'Nunito', sans-serif;    
+font-family: 'Nunito', sans-serif; 
+margin: 0;
+padding: 0;
+box-sizing: border-box;   
 }
 body {
     width: 100vw;
@@ -162,6 +165,34 @@ left: 0;
 #main {
     display:flex;
     flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+#main nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#main nav ul li {
+  list-style-type: none;
+
+}
+#main nav ul li img {
+  width: 90px;
+aspect-ratio: 1/1;
+}
+#main nav ul li h1 {
+  font-size: 35px;
+  line-height: 2.5;
+}
+#main h1 {
+  margin-top: 5vw;
+  margin-left: 5vw;
+  font-size: 40px;
+}
+#main h2 {
+  margin-left: 5vw;
+  font-size: 37.5px;
 }
 .button-82-pushable {
     position: absolute;

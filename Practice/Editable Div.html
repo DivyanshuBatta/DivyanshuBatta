@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <script>
+        let heading = document.createElement("h1");
+        heading.innerHTML = "Editable Heading";
+        document.body.appendChild(heading);
+
+        let div = document.createElement("div");
+        div.innerText = "This is a editable div";
+        div.id = "edit";
+        document.body.append(div);
+
+        edit.addEventListener("click", function(){
+            edit.contentEditable = true;
+        })
+
+        edit.addEventListener("blur", function() {
+            localStorage.setItem("editable div", document.getElementById("edit").innerText);
+        })
+    </script>
+</body>
+</html>

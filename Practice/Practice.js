@@ -51,12 +51,27 @@
 // let ul = document.getElementById('ul');
 
 // ul.appendChild(element)
-console.log('Welcome');
-(console.log("Divyanshu Batta"))
-let heading = document.createElement("h1");
-let text = document.createTextNode("Go to CodeWithHarry.com");
-heading.appendChild(text);
-let link = document.createElement("a");
-link.setAttribute("href","https://www.codewithharry.com")
-link.appendChild(heading);
-document.body.appendChild(link);
+// console.log('Welcome');
+// (console.log("Divyanshu Batta"))
+// let heading = document.createElement("h1");
+// let text = document.createTextNode("Go to CodeWithHarry.com");
+// heading.appendChild(text);
+// let link = document.createElement("a");
+// link.setAttribute("href","https://www.codewithharry.com")
+// link.appendChild(heading);
+// document.body.appendChild(link);
+
+const fruitList = ['apple','banana','tomato']
+
+let ul = document.querySelector("#ul");
+fruitList.forEach(element => {
+    let li = document.createElement("li");
+    li.innerHTML = element;
+    ul.appendChild(li);
+});
+const imageSrc = 'https://crocoder.dev/icon.png';
+
+let div = document.querySelector("#logo-div");
+let img = document.createElement("img");
+img.setAttribute("src",imageSrc);
+div.appendChild(img);
