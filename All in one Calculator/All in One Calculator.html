@@ -70,7 +70,7 @@
               <h4>Compound Interest</h4>
               <img src="Compound Interest.png" alt="Compound Interest">
               <p>To find the interest compounded on the principal amount for some time </p>
-              <button class="button-82-pushable" role="button" id="button1">
+              <button class="button-82-pushable" role="button" id="button1" onclick="finance_calc_1()">
                 <span class="button-82-shadow" id="shadow-finance"></span>
                 <span class="button-82-edge" id="edge-finance"></span>
                 <span class="button-82-front text" id="front-finance"> 
@@ -88,24 +88,45 @@
 <div id="Finance_1_calc">
           <div id="Finance_1_card">
             <h1 id="Finance_1_heading">Compound Interest Calculator</h1>
-    <div class="Finance_1_card_wrapper" id="first_wrapper">
-            <label for="Finance_1_input_1">Principal(<i class="fa-solid fa-indian-rupee-sign"></i>):</label>
+            <div class="Finance_1_card_wrapper" id="first_wrapper">
+              <p id="Finance_1_radio_p">To Get:</p>
+              <label for="Finance_1_radio_1" class="Finance_1_radio_label">Principal
+            <input type="radio" name="Finance_1" value="Principal" id="Finance_1_radio_1" class="radio">
+            <span class="Finance_1_radio_1_checkmark"></span>
+            </label>
+            <label for="Finance_1_radio_2" class="Finance_1_radio_label">Rate
+            <input type="radio" name="Finance_1" value="Rate" id="Finance_1_radio_2" class="radio">
+            <span class="Finance_1_radio_1_checkmark"></span>
+           </label>
+           <label for="Finance_1_radio_3" class="Finance_1_radio_label">Time
+            <input type="radio" name="Finance_1" value="Time" 
+            id="Finance_1_radio_3" class="radio">
+            <span class="Finance_1_radio_1_checkmark"></span>
+            </label>
+            <label for="Finance_1_radio_4" class="Finance_1_radio_label">Compound Interest
+              <input type="radio" name="Finance_1" value="Compound Interest" 
+              id="Finance_1_radio_4" class="radio">
+              <span class="Finance_1_radio_1_checkmark"></span>
+            </label>
+          </div>
+    <div class="Finance_1_card_wrapper" id="second_wrapper">
+            <label for="Finance_1_input_1" id="Finance_1_label_1">Principal(<i class="fa-solid fa-indian-rupee-sign"></i>):</label>
           <input type="number" id="Finance_1_input_1" placeholder="Enter Principal Amount">
         </div>
-    <div class="Finance_1_card_wrapper">
-        <label for="Finance_1_input_2">Rate of Interest(%):</label>
+    <div class="Finance_1_card_wrapper" id="third_wrapper">
+        <label for="Finance_1_input_2" id="Finance_1_label_2">Rate of Interest(%):</label>
           <input type="number" id="Finance_1_input_2" placeholder="Enter Rate of Interest">
         </div>
-    <div class="Finance_1_card_wrapper">
-        <label for="Finance_1_input_3">Time:</label>
-            <input type="number" id="Finance_1_input_3" placeholder="Enter the amount of Time">
+    <div class="Finance_1_card_wrapper" id="fourth_wrapper">
+        <label for="Finance_1_input_3" id="Finance_1_label_3">Time:</label>
+            <input type="number" id="Finance_1_input_3" placeholder="Enter Amount of Time">
     <select name="duration" id="duration">
-      <option value="year">Year</option>
-      <option value="month">Month</option>
-      <option value="month">Day</option>
+      <option value="year" id="f_option">Year</option>
+      <option value="month" id="s_option">Month</option>
+      <option value="day" id="t_option">Day</option>
     </select>
           </div>
-            <button class="button-82-pushable" role="button" id="button_finance_1_calc" onclick="calculate(); buttonDisappear();">
+            <button class="button-82-pushable" role="button" id="button_finance_1_calc" onclick="calculate();">
               <span class="button-82-shadow" id="shadow_finance_1_calc"></span>
               <span class="button-82-edge" id="edge_finance_1_calc"></span>
               <span class="button-82-front text" id="front_finance_1_calc"> 

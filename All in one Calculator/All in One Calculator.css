@@ -74,8 +74,8 @@ body {
 #welcome {
     width: 100vw;
     height: 100vh;
-    display: none;
-    /* display:flex; */
+    /* display: none; */
+    display:flex;
     justify-content:center;
     align-items:center;
     /* flex-direction: column; */
@@ -120,10 +120,10 @@ left: 0;
     width: 100vw;
     height: 100vh;
     display:none;
-    /* display: flex;
+    /* display: flex;*/
     justify-content: flex-start;
     align-items: flex-start; 
-    flex-direction: column; */
+    flex-direction: column;
     background-image: url("giphy.gif");
     background-size: 50vw 50vw;
     background-position: center;
@@ -160,7 +160,6 @@ left: 0;
     border-bottom: 10px solid rgb(0, 0, 0);
     font-size: 25px;
     font-weight: 600;
-    margin-top: -33px;
     margin-left: 30px;
     background-color: #4361E5;
     text-align: center;
@@ -175,8 +174,8 @@ left: 0;
 }
 #main {
   display: none;
-    /* display:flex;
-    flex-direction: column; */
+    /* display:flex;*/
+    flex-direction: column; 
   width: 100vw;
   height: 100vh;
 }
@@ -202,6 +201,11 @@ aspect-ratio: 1/1;
   margin-left: 5vw;
   font-size: 40px;
 }
+#main > #salutation {
+  font-size: 36px;
+  margin-left: 5vw;
+  margin-top: 1vw;
+}
 #main > h2 {
   margin-left: 5vw;
   font-size: 35px;
@@ -225,8 +229,8 @@ aspect-ratio: 1/1;
   }
   #button2 {
     position: absolute;
-    bottom: 30vh;
-    left: 6vw;
+    bottom: 40vh;
+    left: 4vw;
 
   }
   .button-82-shadow {
@@ -413,7 +417,8 @@ aspect-ratio: 1/1;
     width: 100vw;
     height: 100vh;
     background: #2c33ff;
-   display: flex;
+    display: none;
+   /* display: flex;*/
    justify-content: center;
    align-items: center; 
    padding: 60px 30px;
@@ -438,18 +443,21 @@ aspect-ratio: 1/1;
     height: 40px;
    border: 3px solid rgb(238, 238, 238);
    padding-left: 10px;
+   font-size: 20px;
   }
 #Finance_1_input_2 {
   width: 300px;
   height: 40px;
  border: 3px solid rgb(238, 238, 238);
  padding-left: 10px;
+ font-size: 20px;
 }
 #Finance_1_input_3{
   width: 300px;
   height: 40px;
  border: 3px solid rgb(238, 238, 238);
  padding-left: 10px;
+ font-size: 20px;
 }
 /* #Finance_1_input_1:hover,#Finance_1_input_2:hover,#Finance_1_input_3:hover {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -490,6 +498,15 @@ border-bottom: #2c33ff;
 #first_wrapper {
   margin-top: -3.5vw;
 }
+#second_wrapper {
+  margin-top:-1vw;
+}
+#third_wrapper {
+  margin-top: -0.5vw;
+}
+#fourth_wrapper {
+  margin-top: -0.5vw;
+}
 label {
   display: block;
   font-size: 22px;
@@ -504,15 +521,92 @@ select {
   padding: 8px 0;
   border-radius: 5px;
 }
-#result {
-  background-color: #2c33ff;
+#Finance_1_result {
+  background-color: #ffffff;
   /* margin-top: 10px; */
   color: #000000;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   /* padding: 20px; */
   border-radius: 5px;
 }
 #Finance_1_heading {
   margin-top: -2.5vw;
+}
+
+/* Customize the label (the container) */
+.Finance_1_radio_label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.Finance_1_radio_label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.Finance_1_radio_1_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  /* border-radius: 50%; */
+}
+
+/* On mouse-over, add a grey background color */
+.Finance_1_radio_label:hover input ~ .Finance_1_radio_1_checkmark  {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.Finance_1_radio_label input:checked ~ .Finance_1_radio_1_checkmark  {
+  background-color: #2c33ff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.Finance_1_radio_1_checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.Finance_1_radio_label input:checked ~ .Finance_1_radio_1_checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.Finance_1_radio_label .Finance_1_radio_1_checkmark:after {
+  /* top: 9px; */
+  top: 5px;
+   left: 9px;
+  /*width: 8px;
+  height: 8px; */
+  width: 5px;
+  height: 10px;
+  /* border-radius: 50%; */
+  border: solid white;
+  /* background: white; */
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+#Finance_1_radio_p {
+  font-size: 22px;
 }
