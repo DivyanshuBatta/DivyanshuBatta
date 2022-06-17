@@ -29,21 +29,6 @@ body {
     height: 200px;
     border-radius: 50%;
 }
-.animate {
-    animation: animate 2s ease-in;
-}
-@keyframes identifier {
-    from {
-        display:flex;
-    }
-    to {
-        display:none;
-    }
-}
-.dark-mode {
-    background:black;
-    color: white;
-}
 #next {
     width: 150px;
     height: 40px;
@@ -79,12 +64,12 @@ body {
     justify-content:center;
     align-items:center;
     /* flex-direction: column; */
-    background-image: url("Screenshot\ \(34\).png");
+    background-image: url("ezgif.com-gif-maker\ \(2\).gif");
     background-size: 65vw 87.5vh;
     background-position: center;
     background-repeat: no-repeat;
-    color: #ffffff;
-    background-color: #E7DCD9;
+    color: #000000;
+    background-color: #FAFAFA;
     overflow: hidden;
     aspect-ratio: 16 / 9;
 position: absolute;
@@ -105,9 +90,7 @@ left: 0;
     align-self: flex-start;
     justify-self: flex-start;
     /* margin-left: 30px; */
-    position: absolute;
-    /* left: 125px; */
-    top: -20px;
+    margin-top: 10px;
 }
 #welcome .github {
   width: 80px;
@@ -124,7 +107,7 @@ left: 0;
     justify-content: flex-start;
     align-items: flex-start; 
     flex-direction: column;
-    background-image: url("giphy.gif");
+    background-image: url("ezgif.com-gif-maker\ \(3\).gif");
     background-size: 50vw 50vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,10 +243,10 @@ aspect-ratio: 1/1;
     border-radius: 12px;
     background: linear-gradient(
       to left,
-      #21163C 0%,
-      #21163C 8%,
-      #21163C 92%,
-      #21163C 100%
+      #8998E3 0%,
+      #8998E3 8%,
+      #8998E3 92%,
+      #8998E3 100%
     );
     align-self: center;
     justify-self: flex-end;
@@ -285,7 +268,7 @@ aspect-ratio: 1/1;
     font-size: 3rem;
     font-weight: 600;
     color: white;
-    background: #21163C;
+    background: #8998E3;
     will-change: transform;
     transform: translateY(-4px);
     transition:
@@ -575,7 +558,7 @@ select {
 
 /* When the radio button is checked, add a blue background */
 .Finance_1_radio_label input:checked ~ .Finance_1_radio_1_checkmark  {
-  background-color: #2c33ff;
+  /* background-color: #2c33ff; */
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
