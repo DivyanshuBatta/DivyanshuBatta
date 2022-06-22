@@ -61,17 +61,20 @@
 // link.appendChild(heading);
 // document.body.appendChild(link);
 
-const fruitList = ['apple','banana','tomato']
+// const fruitList = ['apple','banana','tomato']
 
-let ul = document.querySelector("#ul");
-fruitList.forEach(element => {
-    let li = document.createElement("li");
-    li.innerHTML = element;
-    ul.appendChild(li);
-});
-const imageSrc = 'https://crocoder.dev/icon.png';
+// let ul = document.querySelector("#ul");
+// fruitList.forEach(element => {
+//     let li = document.createElement("li");
+//     li.innerHTML = element;
+//     ul.appendChild(li);
+// });
+// const imageSrc = 'https://crocoder.dev/icon.png';
 
-let div = document.querySelector("#logo-div");
-let img = document.createElement("img");
-img.setAttribute("src",imageSrc);
-div.appendChild(img);
+// let div = document.querySelector("#logo-div");
+// let img = document.createElement("img");
+// img.setAttribute("src",imageSrc);
+// div.appendChild(img);
+console.log(Math)
+z= Math.round(5.5);
+console.log(z)

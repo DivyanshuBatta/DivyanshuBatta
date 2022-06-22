@@ -65,7 +65,7 @@ body {
     align-items:center;
     /* flex-direction: column; */
     background-image: url("ezgif.com-gif-maker\ \(2\).gif");
-    background-size: 65vw 87.5vh;
+    background-size: 60vw 87.5vh;
     background-position: center;
     background-repeat: no-repeat;
     color: #000000;
@@ -343,7 +343,7 @@ aspect-ratio: 1/1;
     font-size: 30px;
     margin-left: 5vh;
   }
-  #Finance_1 {
+  .finance_cards {
     width:35vh;
     height: 25vw;
     overflow-wrap: normal;
@@ -358,30 +358,30 @@ aspect-ratio: 1/1;
     border: 0.2rem solid rgb(243, 243, 243);
     background-color: #fefefe;
   }
-  #Finance_1:hover {
+  .finance_cards:hover {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 }
-  #Finance_1 > img {
+.finance_cards > img {
     width: 110px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     position: absolute;
     top: 18%;
   }
-  #Finance_1 > #button1 {
+  .finance_cards > #button1 {
     width: 150px;
     height: 15px;
     justify-self: flex-end;
     position: absolute;
     margin-bottom:5vh;
   }
-  #Finance_1 > h4 {
+  .finance_cards > h4 {
     font-size:23px;
     position: absolute;
     top: 5%;
   }
-  #Finance_1 #front-finance {
+  .finance_cards #front-finance {
     width: 150px;
     height: 50px;
     background: #24c0b3;
@@ -389,7 +389,7 @@ aspect-ratio: 1/1;
     font-size: 20px;
     margin-bottom:5vh;
   }
-  #Finance_1 p {
+  .finance_cards p {
     position: absolute;
     top: 52.5%;
     margin-left: 7.5%;
@@ -558,7 +558,7 @@ select {
 
 /* When the radio button is checked, add a blue background */
 .Finance_1_radio_label input:checked ~ .Finance_1_radio_1_checkmark  {
-  /* background-color: #2c33ff; */
+   background-color: #2c33ff; 
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */

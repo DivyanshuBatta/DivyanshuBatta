@@ -66,11 +66,23 @@
       <div id="calculators">
         <div id="Finance">
           <h3 id="Finance_Heading">Finance</h3>
-            <div id="Finance_1">
+            <div id="Finance_1" class="finance_cards">
               <h4>Compound Interest</h4>
               <img src="Compound Interest.png" alt="Compound Interest">
-              <p>To find the interest compounded on the principal amount for some time </p>
+              <p>To find the interest compounded on the principal amount for a particular period. </p>
               <button class="button-82-pushable" role="button" id="button1" onclick="finance_calc_1()">
+                <span class="button-82-shadow" id="shadow-finance"></span>
+                <span class="button-82-edge" id="edge-finance"></span>
+                <span class="button-82-front text" id="front-finance"> 
+                  GO
+                </span>
+              </button>
+            </div>
+            <div id="Finance_2" class="finance_cards">
+              <h4>Simple Interest</h4>
+              <img src="Simple Interest.jpg" alt="Simple Interest">
+              <p>To find the interest on the principal amount for a particular period.</p>
+              <button class="button-82-pushable" role="button" id="button1" onclick="finance_calc_2()">
                 <span class="button-82-shadow" id="shadow-finance"></span>
                 <span class="button-82-edge" id="edge-finance"></span>
                 <span class="button-82-front text" id="front-finance"> 
@@ -80,8 +92,6 @@
             </div>
         </div>
       </div>
-</div>
-
 
 
 <!-- Finance Calculators -->
