@@ -64,12 +64,12 @@ body {
     justify-content:center;
     align-items:center;
     /* flex-direction: column; */
-    background-image: url("ezgif.com-gif-maker\ \(2\).gif");
-    background-size: 60vw 87.5vh;
-    background-position: center;
+    background-image: url("illustration.jpeg");
+    background-size: 100vw 75vh;
+    background-position: top;
     background-repeat: no-repeat;
     color: #000000;
-    background-color: #FAFAFA;
+    background-color: #D5BB99;
     overflow: hidden;
     aspect-ratio: 16 / 9;
 position: absolute;
@@ -98,6 +98,29 @@ left: 0;
   position: absolute;
   top: 10px;
   right: 25px;
+}
+#welcome #message-1 {
+  width: 100vw;
+  background: white;
+  padding: 10px 20px 120px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5%;
+  text-align: center;
+}
+#welcome #message-1 h1 {
+  font-size: 40px;
+}
+#login-page #message-2 {
+  width: 100vw;
+  background: white;
+  padding: 10px 20px 120px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5%;
+  text-align: center;
 }
 #login-page {
     width: 100vw;
@@ -161,6 +184,7 @@ left: 0;
     flex-direction: column; 
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 #main nav ul {
   display: flex;
@@ -182,7 +206,7 @@ aspect-ratio: 1/1;
 #main > h1 {
   margin-top: 5vw;
   margin-left: 5vw;
-  font-size: 40px;
+  font-size: 45px;
 }
 #main > #salutation {
   font-size: 36px;
@@ -195,7 +219,8 @@ aspect-ratio: 1/1;
 }
 .button-82-pushable {
     position: absolute;
-    bottom: 5vh;
+    bottom: 3vh;
+    left: 41vw;
     border: none;
     background: transparent;
     padding: 0;
@@ -243,10 +268,10 @@ aspect-ratio: 1/1;
     border-radius: 12px;
     background: linear-gradient(
       to left,
-      #8998E3 0%,
-      #8998E3 8%,
-      #8998E3 92%,
-      #8998E3 100%
+      #DFC5A0 0%,
+      #DFC5A0 8%,
+      #DFC5A0 92%,
+      #DFC5A0 100%
     );
     align-self: center;
     justify-self: flex-end;
@@ -268,7 +293,7 @@ aspect-ratio: 1/1;
     font-size: 3rem;
     font-weight: 600;
     color: white;
-    background: #8998E3;
+    background: #DFC5A0;
     will-change: transform;
     transform: translateY(-4px);
     transition:
@@ -280,7 +305,7 @@ aspect-ratio: 1/1;
   }
   #front-2 {
     background: #0F0F0F;
-    color: #4361E5;
+    color: #DFC5A0;
   }
   @media (min-width: 768px) {
     .button-82-front {
@@ -348,7 +373,7 @@ aspect-ratio: 1/1;
     height: 25vw;
     overflow-wrap: normal;
     margin-left: -10vw;
-    margin-right: 20vw; 
+    margin-right: 15vw; 
     margin-top: 10vh;
     display: flex;
     justify-content: space-evenly;
@@ -362,13 +387,20 @@ aspect-ratio: 1/1;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 }
-.finance_cards > img {
-    width: 110px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    position: absolute;
-    top: 18%;
-  }
+#Finance_1 {
+  background-image: url("Compound\ Interest.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  filter: brightness(100%);
+}
+#Finance_2 {
+  background-image: url("Simple\ Interest.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  filter: brightness(110%);
+}
   .finance_cards > #button1 {
     width: 150px;
     height: 15px;
@@ -377,7 +409,7 @@ aspect-ratio: 1/1;
     margin-bottom:5vh;
   }
   .finance_cards > h4 {
-    font-size:23px;
+    font-size:27px;
     position: absolute;
     top: 5%;
   }
@@ -390,11 +422,11 @@ aspect-ratio: 1/1;
     margin-bottom:5vh;
   }
   .finance_cards p {
-    position: absolute;
-    top: 52.5%;
+    /* position: absolute;
+    top: 52.5%; */
     margin-left: 7.5%;
     margin-right: 7.5%;
-    font-size: 15.75px;
+    font-size: 22px;
   }
   #Finance_1_calc {
     width: 100vw;

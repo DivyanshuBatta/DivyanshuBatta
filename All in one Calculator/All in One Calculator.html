@@ -13,25 +13,30 @@
   <!--Welcome page 🤓 -->
     <div id="welcome">
         <!-- <img src=".png" alt="" class="calculator"> -->
-        <img src="Screenshot (35).png" alt="" id="landingicon">
+        <!-- <img src="Screenshot (35).png" alt="" id="landingicon">
         <a href="https://github.com/DivyanshuBatta/DivyanshuBatta">
           <img src="github.png" alt="Github" class="github">
-        </a>
+        </a> -->
         <h1>All in One Calculator</h1>
-        <button class="button-82-pushable" role="button" id="button1" onclick="loginpage()">
+        <div class="messages" id="message-1">
+          <h1>The only Calculator that you Need
+          </h1>
+          <button class="button-82-pushable" role="button" id="button1" onclick="loginpage()">
             <span class="button-82-shadow" id="shadow-1"></span>
             <span class="button-82-edge" id="edge-1"></span>
             <span class="button-82-front text" id="front-1"> 
               NEXT
             </span>
           </button>
+        </div>
     </div>
 
   <!-- Login page 🔏  -->
 
     <div id="login-page">
         <!-- <img src="https://static.vecteezy.com/system/resources/thumbnails/004/607/791/small/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector.jpg" alt="" class="user"> -->        
-    <h1>What's your Name?</h1>
+    <div class="messages" id="message-2">
+      <h1>What's your Name?</h1>
     <input type="text" id="name" value='' placeholder="Enter your Name" required aria-label="" required>
     <button class="button-82-pushable" role="button" id="button2" onclick="mainpage()">
         <span class="button-82-shadow" id="shadow-2"></span>
@@ -40,6 +45,7 @@
           NEXT
         </span>
       </button>
+    </div>
 </div>
 
 <!-- Home Page 🤓  -->
@@ -68,7 +74,7 @@
           <h3 id="Finance_Heading">Finance</h3>
             <div id="Finance_1" class="finance_cards">
               <h4>Compound Interest</h4>
-              <img src="Compound Interest.png" alt="Compound Interest">
+              <!-- <img src="Compound Interest.png" alt="Compound Interest"> -->
               <p>To find the interest compounded on the principal amount for a particular period. </p>
               <button class="button-82-pushable" role="button" id="button1" onclick="finance_calc_1()">
                 <span class="button-82-shadow" id="shadow-finance"></span>
@@ -80,7 +86,7 @@
             </div>
             <div id="Finance_2" class="finance_cards">
               <h4>Simple Interest</h4>
-              <img src="Simple Interest.jpg" alt="Simple Interest">
+              <!-- <img src="Simple Interest.jpg" alt="Simple Interest"> -->
               <p>To find the interest on the principal amount for a particular period.</p>
               <button class="button-82-pushable" role="button" id="button1" onclick="finance_calc_2()">
                 <span class="button-82-shadow" id="shadow-finance"></span>
