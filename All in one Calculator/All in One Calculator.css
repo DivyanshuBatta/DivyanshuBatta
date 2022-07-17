@@ -57,14 +57,14 @@ body {
     font-weight: 100;
 }
 #welcome {
-    width: 100vw;
+    width:100vw;
     height: 100vh;
     /* display: none; */
     display:flex;
     justify-content:center;
     align-items:center;
     /* flex-direction: column; */
-    background-image: url("illustration.jpeg");
+    background-image: url("ezgif.com-gif-maker\ \(2\).gif");
     background-size: 100vw 75vh;
     background-position: top;
     background-repeat: no-repeat;
@@ -99,15 +99,32 @@ left: 0;
   top: 10px;
   right: 25px;
 }
-#welcome #message-1 {
-  width: 100vw;
+#welcome > #message-1 {
+  width: 100vw; 
   background: white;
   padding: 10px 20px 120px 20px;
   position: absolute;
-  bottom: 0;
+  bottom: -200px;
   left: 0;
   border-radius: 5%;
   text-align: center;
+  animation-name: message;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function:  cubic-bezier(.3, .7, .4, 1);
+}
+@keyframes message {
+  0% {
+    display: none;
+  }
+  100% {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+  }
 }
 #welcome #message-1 h1 {
   font-size: 40px;
