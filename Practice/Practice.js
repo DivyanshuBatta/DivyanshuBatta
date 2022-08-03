@@ -75,6 +75,12 @@
 // let img = document.createElement("img");
 // img.setAttribute("src",imageSrc);
 // div.appendChild(img);
-console.log(Math)
-z= Math.round(5.5);
-console.log(z)
+// console.log(Math)
+// z= Math.round(5.5);
+// console.log(z)
+let Divyanshu = "Full Stack Web Developer";
+
+
+
+
+
